@@ -217,7 +217,7 @@
   <!-- About Us Section Ends Here -->
 
   <!-- Core Services Starts Here -->
-  <div class="servicesection p-5">
+  <div class="servicesection p-2">
     <div class="container">
 
       <div class="row">
@@ -239,7 +239,7 @@
         </div>
         @endforeach --}}
 
-        <div class="row p-5">
+        <div class="row p-2">
           <div class="flight col-12 col-lg-4 col-md-6 col-xl-4">
             <div class="box">
               <img src="images/image (2).jpg" alt="air cargo" width="100%">
@@ -374,7 +374,7 @@
 
 <!-- Download App Section  Begins Here -->
 <div class="downloadsection">
-  <div class="container p-5">
+  <div class="container p-1">
 
         <div class="row">
           <div class="explore" id="download">
@@ -383,13 +383,13 @@
           </div>
         </div>
 
-    <div class="row p-3">
+    <div class="row">
       <div class="downloadapp">
         <button type="button" class="btnsign btn-primary btn btn-lg me-2">Download App</button>
       </div>
     </div>
 
-    <div class="row p-3">
+    <div class="row p-2">
       <div class="download col-12 col-lg-6 col-md-6 col-xl-6">
         <div class="box">
           <img src="images/apps.png" alt="city" width="100%">
@@ -398,7 +398,7 @@
       </div>
     
       <div class="download2 col-12 col-lg-6 col-md-6 col-xl-6">
-    <div class="row p-5">
+    <div class="row p-2">
       
           <h1>Get the <Span>STAY.INN</Span> App</h1>
        {{-- </div> --}}
