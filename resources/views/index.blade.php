@@ -43,25 +43,21 @@
 
   <!-- Navigation header begins here -->
 
-  <nav>
-    <div class="container">
-      <input type="checkbox" id="check" />
-      <label for="check" class="checkbtn">
-        <i class="fa fa-bars"></i>
-      </label>
-      <label class="logo"><span>Stay.Inn</span></label>
-      <ul class="ul">
-        <li><a class="active" href="{{route('home')}}">Home</a></li>
-        <li><a href="#hotels">Hotels</a></li>
-        <li><a href="#explore">City</a></li>
-        <li><a href="#download">Download</a></li>
-        <li><a href="#contact">Contact</a></li>
-        {{-- <li><a href="{{route('showlogin')}}">login</a></li> --}}
-        <li><a href="{{route('showregister')}}">List your Hotel</a></li>
-      </ul>
+  <header>
+    <img src="images/Stay.Inn Logo.png" alt="logo"/>
+    <div class="menuToggle" onclick="toggleMenu();"></div>
+    <ul class="navigation">
+        <li><a href="#home.html" onclick="toggleMenu();">Home</a></li>
+        <li><a href="#hotels" onclick="toggleMenu();">Hotels</a></li>
+        <li><a href="#explore"onclick="toggleMenu();">City</a></li>
+        <li><a href="{{route('register')}}"onclick="toggleMenu();">List Your Hotel</a></li>
+        <li><a href="#download"onclick="toggleMenu();">Download</a></li>
+        <li><a href="#contact"onclick="toggleMenu();">Contact</a></li>
 
-    </div>
-  </nav>
+    </ul>
+
+
+</header>
 
     <!-- Navigation header ends here -->
 
@@ -615,6 +611,23 @@
       );
     }
   </script>
+
+    <script type="text/javascript">
+        window.addEventListener('scroll', function(){
+            const header = document.querySelector('header');
+            header.classList.toggle("sticky", window.scrollY > 0);
+
+        }); 
+
+        function toggleMenu(){
+            const menuToggle = document.querySelector('.menuToggle');
+            const navigation = document.querySelector('.navigation');
+            menuToggle.classList.toggle('active');
+            navigation.classList.toggle('active');
+        }
+
+    </script>
+  
 </body>
 
 </html>
