@@ -1,0 +1,457 @@
+*{
+  padding: 0px;
+  margin: 0px;
+  text-decoration: none;
+  list-style: none;
+  box-sizing: border-box;
+
+}
+
+
+body{
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+
+nav{
+  background: #000000;
+  height: 80px;
+  width: 100%;
+
+  }
+
+  label.logo{
+    color: white;
+    font-size: 35px;
+    line-height: 80px;
+    padding: 0  80px;
+    font-weight: bold;
+
+  }
+
+  nav ul{
+    float: right;
+    /* margin-right: 80px; */
+  }
+
+  nav ul li {
+     display: inline-block;
+     line-height: 80px;
+     margin: 0 15px;
+     
+  }
+  nav ul li a {
+    color: white;
+    font-size: 17px;
+    text-transform: uppercase;
+    text-decoration: none;
+
+  }
+
+  a.active, a:hover{
+    background:   none;
+    color: rgb(241, 149, 10);
+    transition:  .5s;
+
+  }
+
+  .checkbtn{
+    font-size: 30px;
+    color: white;
+    float: right;
+    line-height: 80px;
+    margin-right: 40px;
+    cursor: pointer;
+    display: none;
+  }
+
+  #check{
+    display: none;
+  }
+
+  @media(max-width: 900px){
+    label.logo{
+      font-size: 30px;
+      padding-left: 50px;
+    }
+
+    na ul li a{
+      font-size: 16px;
+    }
+  }
+@media(max-width: 1000px){
+  .checkbtn{
+    display: block;
+
+  }
+  nav ul{
+    position: fixed;
+    width: 100%;
+    height: 65vh;
+    background:  #00090f;
+    top: 80px;
+    left: -100%;
+    text-align: center;
+    transition: all .5s;
+  }
+
+  nav ul li{
+    display: block;
+    margin: 50px 0;
+    line-height: 30px;
+    margin-top: 60px;
+  }
+
+  nav ul li a {
+    font-size: 20px;
+
+  }
+  a:hover, a.active{
+    background: none;
+    color: rgb(241, 149, 10);
+    
+
+  }
+#check:checked ~ ul{
+  left: 0;
+
+}
+
+}
+span{
+color: rgb(12, 138, 240);
+
+}
+
+/* end of navigation header css */
+
+
+.login{
+  background: #00090f;
+  height: auto;
+  width: 100%;
+
+  }
+
+  .login .btnsign{
+    color: #FFFFFF;
+    font-size: larger;
+    width: 100px;
+    height: 45px;
+    text-align: center;
+    border-radius: 15px;
+    font-weight: bold;
+    border: 2px solid rgb(241, 149, 10);
+    background: transparent;
+    cursor: pointer;
+
+    /* position: relative; */
+    overflow: hidden;
+  } 
+  .login .btnsign:hover{
+    background: rgb(9, 127, 173);
+    transition: 0.5s;
+    border: none;
+  }
+
+  
+  
+
+
+
+  .mainsearch {
+    width: 50%;
+    margin: 50px auto;
+}
+
+/* Bootstrap 4 text input with search icon */
+
+.has-search .form-control {
+    padding-left: 2.375rem;
+}
+
+.has-search .form-control-feedback {
+    position: absolute;
+    z-index: 2;
+    display: block;
+    width: 2.375rem;
+    height: 2.375rem;
+    line-height: 2.375rem;
+    text-align: center;
+    pointer-events: none;
+    color: #aaa;
+}
+
+
+
+
+
+
+
+
+
+.logisticimage{
+  padding: 20px;
+}
+
+
+
+/* hotels section begins here */
+.servicesection{
+  margin-top: 20px;
+  margin-bottom: 10px;
+
+}
+
+.servicesection h3{
+
+    font-size: 40px;
+    font-weight: bold;
+    position: relative;
+  
+   
+  }
+  
+  .servicesection p{
+   font-size: small;
+   position: relative;
+  }
+ 
+
+
+.service{
+  text-align: center;
+  padding-top: 20px;
+  text-transform: uppercase;
+  
+
+}
+.service h1{
+  font-size: 40px;
+  font-weight: bold;
+  position: relative;
+
+}
+.service h1::after{
+  content: '';
+  height: 3px;
+  width: 100%;
+  background-color: #009688;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+
+ }
+ .service h1:hover::after{
+  width: 100%;
+ }
+
+
+
+ .box{
+  padding-top: 40px;
+  padding-bottom: blue;
+  border-color: #000000;
+}
+
+/* hotels section ends here */
+
+
+/* Explore section begins here */
+
+.exploresection h3 {
+
+  font-size: 40px;
+  font-weight: bold;
+  position: relative;
+
+ 
+}
+
+.exploresection p{
+ font-size: small;
+ position: relative;
+}
+
+.explore{
+  text-align: center;
+  padding-top: 40px;
+  text-transform: capitalize;
+  
+
+}
+.explore {
+  font-size: 40px;
+  font-weight: bold;
+  position: relative;
+
+}
+.explore::after{
+  content: '';
+  height: 3px;
+  width: 100%;
+  background-color: #009688;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+
+ }
+ .explore:hover::after{
+  width: 100%;
+ }
+
+
+
+ .box{
+  padding-top: 40px;
+  padding-bottom: blue;
+  border-color: #000000;
+}
+
+/* Explore section ends here */
+
+/* download app section begins here */
+
+.downloadapp{
+  text-align: center;
+  padding-top: 40px;
+  text-transform: capitalize;
+}
+
+.downloadsection .download2{
+  padding-top: 100px;
+}
+
+/* download app section ends here */
+
+
+
+
+
+
+
+
+.whywe h2{
+  font-size: 30px;
+  font-weight: bold;
+  position: relative;
+
+}
+.whywe h2::after{
+  content: '';
+  height: 3px;
+  width: 0;
+  background-color: #009688;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+ }
+ .whywe h2:hover::after{
+  width: 100%;
+ }
+
+.contactUs h2{
+  text-align: center;
+  font-size: 30px;
+  font-weight: bold;
+  position: relative;
+}
+
+.contactUs h2::after{
+  content: '';
+  height: 3px;
+  width: 0;
+  background-color: #009688;
+  position: absolute;
+  left: 0;
+  bottom: -10px;
+  transition: 0.5s;
+ }
+ .contactUs h2:hover::after{
+  width: 100%;
+ }
+
+.formlabel{
+  font-size: 60px;
+}
+
+.contactUs button{
+  padding: 15px;
+  background: rgb(6, 173, 245);
+  color: white;
+  font-size: large;
+  font-weight: bold;
+  border-radius: 15px;
+  cursor: pointer;
+  width: 150px;
+  border: 0;
+  align-self: center;
+
+
+}
+
+
+
+
+
+
+
+/*** Footer ***/
+.footer {
+  background: linear-gradient(rgba(6, 3, 21, .5), rgba(6, 3, 21, .5)), url(images/h1_hero.jpg.webp) center center no-repeat;
+  background-size: cover;
+}
+
+.footer .btn.btn-social {
+  margin-right: 5px;
+  width: 35px;
+  height: 35px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: var(--light);
+  border: 1px solid #FFFFFF;
+  border-radius: 35px;
+  transition: .3s;
+}
+
+.footer .btn.btn-social:hover {
+  color: var(--primary);
+}
+
+.footer .btn.btn-link {
+  display: block;
+  margin-bottom: 5px;
+  padding: 0;
+  text-align: left;
+  color: #FFFFFF;
+  font-size: 15px;
+  font-weight: normal;
+  text-transform: capitalize;
+  transition: .3s;
+}
+
+.footer .btn.btn-link::before {
+  position: relative;
+  content: "\f105";
+  font-family: "Font Awesome 5 Free";
+  font-weight: 900;
+  margin-right: 10px;
+}
+
+.footer .btn.btn-link:hover {
+  letter-spacing: 1px;
+  box-shadow: none;
+}
+
+.footer .copyright {
+  padding: 25px 0;
+  font-size: 15px;
+  border-top: 1px solid rgba(256, 256, 256, .1);
+}
+
+.footer .copyright a {
+  color: var(--light);
+}
