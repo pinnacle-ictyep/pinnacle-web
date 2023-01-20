@@ -128,7 +128,7 @@ header .navigation li a:hover{
   }
 }
 
-}
+
 span{
 color: rgb(12, 138, 240);
 
@@ -194,15 +194,16 @@ color: rgb(12, 138, 240);
 }
 
 
-
-
-
-
-
+.carousel-caption {
+  background: rgba(0, 0, 0, 0.2);
+   }
+ 
 
 
 .logisticimage{
   padding: 20px;
+  opacity: 0.6;
+
 }
 
 
@@ -219,7 +220,7 @@ color: rgb(12, 138, 240);
     font-size: 40px;
     font-weight: bold;
     position: relative;
-  
+
    
   }
   
@@ -336,12 +337,6 @@ color: rgb(12, 138, 240);
 }
 
 /* download app section ends here */
-
-
-
-
-
-
 
 
 .whywe h2{

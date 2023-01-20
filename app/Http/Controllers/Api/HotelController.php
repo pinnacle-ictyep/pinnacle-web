@@ -3,6 +3,8 @@
 namespace App\Http\Controllers\Api;
 
 use App\Models\Hotel;
+use App\Models\Roomtype;
+use App\Models\Gallery;
 use Illuminate\Http\Request;
 use Illuminate\Validation\Rule;
 use App\Http\Controllers\Controller;
@@ -23,7 +25,7 @@ class HotelController extends Controller
         if($hotels->count()<0){
             return response()->json([
                 'status' => true,
-                'message' => 'no hotel in this application',
+                'message' => 'no hotel Registed ',
             ], 200);
         }
 
@@ -31,6 +33,79 @@ class HotelController extends Controller
             'status' => true,
             'hotels' => $hotels
         ]);
+    }
+
+
+    public function showroom()
+    {
+
+        try {
+        
+        $roomtypes = Roomtype::all();
+
+        if($roomtypes->count()<0){
+            return response()->json([
+                'status' => true,
+                'message' => ' roomtypes unavailable'
+            ], 200);
+        }
+
+        // $hotels = Hotel::all();
+        // foreach($hotels as $hotel)
+
+        // foreach($roomtypes as $roomtype)
+        // dd($roomtype->hotel_id);
+
+        // if($roomtype->hotel_id == $hotel->id)
+        
+
+        return response()->json([
+            'status' => true,
+            'hotels' => $roomtypes
+        ]);
+        } catch (\Throwable $th) {
+            return response()->json([
+                'message'=> $th->getMessage()
+            ]);
+            
+        }
+        
+    }
+
+    public function gallery()
+    {
+
+        try {
+        
+        $galleries = Gallery::all();
+
+        if($galleries->count()<0){
+            return response()->json([
+                'status' => true,
+                'message' => ' roomtypes unavailable'
+            ], 200);
+        }
+
+        // $hotels = Hotel::all();
+        // foreach($hotels as $hotel)
+
+        // foreach($roomtypes as $roomtype)
+        // dd($roomtype->hotel_id);
+
+        // if($roomtype->hotel_id == $hotel->id)
+        
+
+        return response()->json([
+            'status' => true,
+            'hotels' => $galleries
+        ]);
+        } catch (\Throwable $th) {
+            return response()->json([
+                'message'=> $th->getMessage()
+            ]);
+            
+        }
+        
     }
 
     /**

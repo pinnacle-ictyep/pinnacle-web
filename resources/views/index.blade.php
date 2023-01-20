@@ -7,7 +7,7 @@
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>StayInn.ng: Book the best Hotels in Delta State</title>
   <link rel="stylesheet" href="{{asset('style.css')}}">
-  <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}" />
+  <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}"/>
   {{-- <script src="https://kit.fontawesome.com/ad1524cc6d.js" crossorigin="anonymous"> </script> --}}
   <!-- CSS only -->
   {{-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" --}}
@@ -87,7 +87,7 @@
         </div>
         <div class="carousel-item">
           <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg> -->
-          <img class="bd-placeholder-img" src="images/hotel.jpg" alt="Company Logo" width="100%" height="456px">
+          <img class="bd-placeholder-img" src="images/index.jpg" alt="Company Logo" width="100%" height="456px">
           <div class="container">
             <div class="carousel-caption" style="text-align: center;" >
               <h1>Find and book your next stay in Asaba.</h1>

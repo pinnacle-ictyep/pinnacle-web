@@ -85,11 +85,32 @@ class AuthController extends Controller
             'password' => Hash::make($request->password)
         ]);
 
+        if (Auth::attempt($request->only(['email', 'password'])))
+            $user = User::where('email', $request->email)->first();
+
         return response()->json([
             'status' => true,
             'message' => 'Account Created Successfully',
             'data' => $user,
             'token' => $user->createToken('API TOKEN')->plainTextToken,
+        ]);
+    }
+
+
+    public function profile(User $user, $id)
+    {
+        $user = User::findOrFail($id);
+
+        if($user->count()<0){
+            return response()->json([
+                'status' => true,
+                'message' => 'no user in this application',
+            ], 200);
+        }
+
+        return response()->json([
+            'status' => true,
+            'users' => $user
         ]);
     }
 
