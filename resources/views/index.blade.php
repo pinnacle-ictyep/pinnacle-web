@@ -376,7 +376,7 @@
 <div class="downloadsection">
   <div class="container p-1">
 
-        <div class="row">
+        <div class="row p-1">
           <div class="explore" id="download">
             <h3>Download The StayInn Mobile App</h3>
             <p>Available on both apple and playstore</p>
@@ -401,20 +401,20 @@
     <div class="row">
       
           <h1>Get the <Span>STAY.INN</Span> App</h1>
-       {{-- </div> --}}
+       </div>
 
-      {{-- <div class="row"> --}}
+      <div class="row">
         
-            <h2>Download the <Span>STAY.INN</Span> App and book a hotel instantly</h2>
+            <h3>Download the <Span>STAY.INN</Span> App and book a hotel instantly</h3>
        
-        {{-- </div> --}}
+        </div>
 
-        {{-- <div class="row"> --}}
+        <div class="row">
          
               <h3>Book your hotel instantly with our Andriod & IOS App</h3>
           
-          {{-- </div> --}}
-          {{-- <div class="row"> --}}
+          </div>
+          <div class="row">
          
             <img src="images/download.png" alt="city" width="100%">
         
