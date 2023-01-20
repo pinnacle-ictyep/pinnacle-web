@@ -398,7 +398,7 @@
       </div>
     
       <div class="download2 col-12 col-lg-6 col-md-6 col-xl-6">
-    <div class="row p-2">
+    <div class="row">
       
           <h1>Get the <Span>STAY.INN</Span> App</h1>
        {{-- </div> --}}
