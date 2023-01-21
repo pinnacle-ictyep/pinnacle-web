@@ -30,13 +30,11 @@ endpoints:
     fileParameters: []
     responses:
       -
-        status: 200
-        content: '{"status":true,"hotels":[{"id":1,"name":"Creative hotel and suites","email":"pinnacle@gmail.com","phone":"07063161583","user_id":"1","image":"image\/f3HesJAV3LxRGpH6rihIMMDnrGUKY6w0UAlF7Bsk.jpg","address":"asaba","location":"12 Ejovwo street","rules":"no facemask no entry","amenities":"Swimming pools, Jacuzzi, WIFI","description":"excellent","price":"20,000-40,000","created_at":"2023-01-19T08:46:48.000000Z","updated_at":"2023-01-19T08:46:48.000000Z"},{"id":3,"name":"FOBBS APARTMENT AND SUITES","email":"fobbs@gmail.com","phone":"091234556544","user_id":"3","image":"image\/H86Oo7vF13j5XqBemkmnbI8weaOPmvIMOPHopM2g.jpg","address":"aasaba","location":"56 street of hope","rules":"do not smoke","amenities":"Swimming pools, Jacuzzi, WIFI","description":"excellentt","price":"25,000-50,000","created_at":"2023-01-19T09:33:47.000000Z","updated_at":"2023-01-19T09:36:37.000000Z"},{"id":4,"name":"Imacul","email":"imaculate@gmail.com","phone":"07063161583","user_id":"4","image":"image\/vDd4C5nqWNrnI1wTzd7dhKljjjtOY7XUjO61BE2G.jpg","address":"Asaba","location":"vanguard asaba","rules":"wash your handss","amenities":"bathrooms","description":"great","price":"20,000-40,000","created_at":"2023-01-19T10:38:22.000000Z","updated_at":"2023-01-19T10:38:22.000000Z"},{"id":5,"name":"Paragon","email":"paragonsuites@gmail.com","phone":"0987655443","user_id":"5","image":"image\/QS3K8opuoelyZHnbwj7JsOicg7G2z5ETSGY7JkUx.jpg","address":"bendel estate","location":"bendel estate","rules":"No hard drugs","amenities":"snooker board","description":"24hrs light","price":"7000-13000","created_at":"2023-01-19T10:44:22.000000Z","updated_at":"2023-01-19T10:44:22.000000Z"}]}'
+        status: 401
+        content: '{"message":"Unauthenticated."}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
-          x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '58'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -81,13 +79,11 @@ endpoints:
     fileParameters: []
     responses:
       -
-        status: 200
-        content: '{"status":true,"hotels":{"id":1,"name":"Creative hotel and suites","email":"pinnacle@gmail.com","phone":"07063161583","user_id":"1","image":"image\/f3HesJAV3LxRGpH6rihIMMDnrGUKY6w0UAlF7Bsk.jpg","address":"asaba","location":"12 Ejovwo street","rules":"no facemask no entry","amenities":"Swimming pools, Jacuzzi, WIFI","description":"excellent","price":"20,000-40,000","created_at":"2023-01-19T08:46:48.000000Z","updated_at":"2023-01-19T08:46:48.000000Z","roomtype":[{"id":1,"title":"Deluxx","image":"image\/stRITm8koaJlH2Dv9sXHdiIWOgZL5Sei89ZbUEVT.jpg","price":"20,000-40,000","hotel_id":"1","created_at":"2023-01-19T08:32:22.000000Z","updated_at":"2023-01-19T08:32:22.000000Z"},{"id":2,"title":"Delux","image":"image\/d6OokquiCRFkF1EYKBpJuNZm5OEyvplYsXVxWJ2g.jpg","price":"25,000-50,000","hotel_id":"1","created_at":"2023-01-19T08:33:44.000000Z","updated_at":"2023-01-19T08:33:44.000000Z"}],"gallery":[{"id":1,"img_scr":"image\/3P1ykyk2gd6oV9PE7RrkxqSYFPu9uVgUYnpQh8i9.jpg","img_alt":"Creative hotel and suites","hotel_id":"1","created_at":"2023-01-19T08:46:48.000000Z","updated_at":"2023-01-19T08:46:48.000000Z"},{"id":2,"img_scr":"image\/pwtbZNCiqlK6ayenIsDEYXLqevdWsu3VfMEU8Ygr.jpg","img_alt":"Creative hotel and suites","hotel_id":"1","created_at":"2023-01-19T08:46:48.000000Z","updated_at":"2023-01-19T08:46:48.000000Z"},{"id":3,"img_scr":"image\/VwBPJ7aiSwV6OxGHxbof7iSXqCro2UzIqKTDoXcH.jpg","img_alt":"Creative hotel and suites","hotel_id":"1","created_at":"2023-01-19T08:46:48.000000Z","updated_at":"2023-01-19T08:46:48.000000Z"},{"id":6,"img_scr":"gallery\/KB6qR1GlD0B6Davk7DnfLnMKgRPGtLigUcTRR03U.jpg","img_alt":"Creative hotel and suites","hotel_id":"1","created_at":"2023-01-19T08:48:52.000000Z","updated_at":"2023-01-19T08:48:52.000000Z"},{"id":7,"img_scr":"gallery\/H6Es9AhF3aV6J19UffsnSWzVa7lizIgUNY6rnQOX.jpg","img_alt":"Creative hotel and suites","hotel_id":"1","created_at":"2023-01-19T08:48:52.000000Z","updated_at":"2023-01-19T08:48:52.000000Z"},{"id":8,"img_scr":"gallery\/0U5zQjbdr0MsuIMuaYSOc2gGgKqecEdMNk1GFZwt.jpg","img_alt":"Creative hotel and suites","hotel_id":"1","created_at":"2023-01-19T08:48:52.000000Z","updated_at":"2023-01-19T08:48:52.000000Z"}]}}'
+        status: 401
+        content: '{"message":"Unauthenticated."}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
-          x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '57'
           access-control-allow-origin: '*'
         description: null
         custom: []

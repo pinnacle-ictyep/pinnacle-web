@@ -32,13 +32,11 @@ endpoints:
     fileParameters: []
     responses:
       -
-        status: 200
-        content: '{"status":true,"roomtypes":[{"id":1,"title":"Deluxx","image":"image\/stRITm8koaJlH2Dv9sXHdiIWOgZL5Sei89ZbUEVT.jpg","price":"20,000-40,000","hotel_id":"1","created_at":"2023-01-19T08:32:22.000000Z","updated_at":"2023-01-19T08:32:22.000000Z"},{"id":2,"title":"Delux","image":"image\/d6OokquiCRFkF1EYKBpJuNZm5OEyvplYsXVxWJ2g.jpg","price":"25,000-50,000","hotel_id":"1","created_at":"2023-01-19T08:33:44.000000Z","updated_at":"2023-01-19T08:33:44.000000Z"}]}'
+        status: 401
+        content: '{"message":"Unauthenticated."}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
-          x-ratelimit-limit: '60'
-          x-ratelimit-remaining: '56'
           access-control-allow-origin: '*'
         description: null
         custom: []
