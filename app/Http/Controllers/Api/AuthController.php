@@ -59,10 +59,6 @@ class AuthController extends Controller
             'name' => 'required',
             'email' => 'required|unique:users,email',
             'phone' => 'required',
-            // 'address' => 'nullable',
-            // 'image' => 'nullable',
-            // 'website' => 'nullable',
-            // 'role' => 'nullable',
             'password' => 'required'
         ]);
 
@@ -86,7 +82,6 @@ class AuthController extends Controller
             'phone' => $request->phone,
             'address' => $request->address,
             'image' => $img_dir,
-            // 'role' => $request->role,
             'website' => $request->website,
             'password' => Hash::make($request->password)
         ]);
@@ -133,8 +128,6 @@ class AuthController extends Controller
             'image' => 'nullable',
             'website' => 'nullable',
             'gender' => 'nullable',
-            // 'role' => 'nullable',
-            // 'password' => 'required'
         ]);
 
         if ($update->fails()) {
@@ -151,21 +144,10 @@ class AuthController extends Controller
            $user->update($input);
         }
 
-        // $user->update([
-        //     'name' => $request->name,
-        //     'email' => $request->email,
-        //     'phone' => $request->phone,
-        //     'address' => $request->address,
-        //     'image' => $request->image,
-        //     // 'role' => $request->role,
-        //     'website' => $request->website
-        // ]);
-
         return response()->json([
             'status' => true,
             'message' => 'Profile Updated Successfully',
             'data' => $user,
-            // 'token' => $user->createToken('API TOKEN')->plainTextToken,
         ]);
     }
 }
