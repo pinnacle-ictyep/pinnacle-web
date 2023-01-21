@@ -132,6 +132,7 @@ class AuthController extends Controller
             'address' => 'nullable',
             'image' => 'nullable',
             'website' => 'nullable',
+            'gender' => 'nullable',
             // 'role' => 'nullable',
             // 'password' => 'required'
         ]);
