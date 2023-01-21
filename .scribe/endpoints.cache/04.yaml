@@ -32,11 +32,13 @@ endpoints:
     fileParameters: []
     responses:
       -
-        status: 401
-        content: '{"message":"Unauthenticated."}'
+        status: 200
+        content: '{"status":true,"hotels":[{"id":1,"img_scr":"image\/r6un7sAVCrIvGLGtrrlyLPSFMmD7SpoDuWQ6Fd42.jpg","img_alt":"kelvino Hotel","hotel_id":"2","created_at":"2023-01-18T21:08:05.000000Z","updated_at":"2023-01-18T21:08:05.000000Z"},{"id":2,"img_scr":"image\/t3b8PVvpXaEl9WVoEMSs1yRdoQfDxrmoeYSnixj3.jpg","img_alt":"kelvino Hotel","hotel_id":"2","created_at":"2023-01-18T21:08:05.000000Z","updated_at":"2023-01-18T21:08:05.000000Z"},{"id":3,"img_scr":"image\/KVrWql22PkPDg3OQNGgWdIE0IJn99UYASXZvS3fU.jpg","img_alt":"praiseHotel","hotel_id":"3","created_at":"2023-01-18T21:16:40.000000Z","updated_at":"2023-01-18T21:16:40.000000Z"},{"id":4,"img_scr":"gallery\/cV7jrhEFrX4zCtNNGeCT28mjgF67tvUv5ezBhJUJ.jpg","img_alt":"tiger","hotel_id":"3","created_at":"2023-01-18T21:21:16.000000Z","updated_at":"2023-01-18T21:21:16.000000Z"},{"id":5,"img_scr":"gallery\/EWaXbnvw5B4Xi4Q5hQEyb7wS38qWzcumPO5Mw5Vw.jpg","img_alt":"praiseHotel","hotel_id":"3","created_at":"2023-01-18T21:25:40.000000Z","updated_at":"2023-01-18T21:25:40.000000Z"},{"id":6,"img_scr":"image\/kqIEwv6Ebi7mxa6EuzatHJHURRUtm3FhJ9NaMWci.jpg","img_alt":"presh hotel","hotel_id":"4","created_at":"2023-01-19T15:02:43.000000Z","updated_at":"2023-01-19T15:02:43.000000Z"},{"id":7,"img_scr":"image\/1NDu8H4nCq7XxnetoZRJwZQVn28DCI21Vtivz2Ea.jpg","img_alt":"kelvino Hotel","hotel_id":"5","created_at":"2023-01-19T23:07:31.000000Z","updated_at":"2023-01-19T23:07:31.000000Z"},{"id":8,"img_scr":"image\/0OV46skHNeFmexvxaYDWBrMuXDVi61Pcc1lWDjPp.jpg","img_alt":"kelvino Hotel","hotel_id":"5","created_at":"2023-01-19T23:07:31.000000Z","updated_at":"2023-01-19T23:07:31.000000Z"}]}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '55'
           access-control-allow-origin: '*'
         description: null
         custom: []

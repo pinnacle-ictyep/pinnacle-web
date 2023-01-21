@@ -5,7 +5,7 @@ namespace App\Http\Controllers\Api;
 use App\Models\Hotel;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
-
+use App\Models\Booking;
 
 /**
  * @group Hotel Management

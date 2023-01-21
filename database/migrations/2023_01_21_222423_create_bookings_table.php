@@ -15,6 +15,18 @@ return new class extends Migration
     {
         Schema::create('bookings', function (Blueprint $table) {
             $table->id();
+            $table->string('hotel_name');
+            $table->string('hotel_location');
+            $table->string('roomtype');
+            $table->string('hotel_id');
+            $table->string('roomtype_id');
+            $table->string('total');
+            $table->date('check_in');
+            $table->date('check_out');
+            $table->string('name');
+            $table->string('phone');
+            $table->string('email');
+            $table->string('comment')->nullable();
             $table->timestamps();
         });
     }

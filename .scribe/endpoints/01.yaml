@@ -30,19 +30,19 @@ endpoints:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: mayer.maude@example.org
+        example: asipes@example.net
         type: string
         custom: []
       password:
         name: password
         description: ''
         required: true
-        example: exercitationem
+        example: maiores
         type: string
         custom: []
     cleanBodyParameters:
-      email: mayer.maude@example.org
-      password: exercitationem
+      email: asipes@example.net
+      password: maiores
     fileParameters: []
     responses: []
     responseFields: []
@@ -78,35 +78,35 @@ endpoints:
         name: name
         description: ''
         required: true
-        example: esse
+        example: culpa
         type: string
         custom: []
       email:
         name: email
         description: ''
         required: true
-        example: excepturi
+        example: quod
         type: string
         custom: []
       phone:
         name: phone
         description: ''
         required: true
-        example: quos
+        example: est
         type: string
         custom: []
       password:
         name: password
         description: ''
         required: true
-        example: quia
+        example: aut
         type: string
         custom: []
     cleanBodyParameters:
-      name: esse
-      email: excepturi
-      phone: quos
-      password: quia
+      name: culpa
+      email: quod
+      phone: est
+      password: aut
     fileParameters: []
     responses: []
     responseFields: []
@@ -150,11 +150,13 @@ endpoints:
     fileParameters: []
     responses:
       -
-        status: 401
-        content: '{"message":"Unauthenticated."}'
+        status: 200
+        content: '{"status":true,"users":{"id":1,"name":"kelvin","email":"kelvin@gmail.com","phone":"09054345678","role":"Agent","address":null,"website":null,"image":"please upload image","gender":null,"email_verified_at":null,"created_at":"2023-01-18T21:06:36.000000Z","updated_at":"2023-01-18T21:06:36.000000Z"}}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '59'
           access-control-allow-origin: '*'
         description: null
         custom: []
@@ -187,11 +189,11 @@ endpoints:
         name: id
         description: 'The ID of the editprofile.'
         required: true
-        example: blanditiis
+        example: quibusdam
         type: string
         custom: []
     cleanUrlParameters:
-      id: blanditiis
+      id: quibusdam
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters:
@@ -199,21 +201,21 @@ endpoints:
         name: name
         description: ''
         required: true
-        example: repellendus
+        example: et
         type: string
         custom: []
       email:
         name: email
         description: ''
         required: true
-        example: commodi
+        example: suscipit
         type: string
         custom: []
       phone:
         name: phone
         description: ''
         required: true
-        example: aliquam
+        example: sunt
         type: string
         custom: []
       address:
@@ -245,9 +247,9 @@ endpoints:
         type: string
         custom: []
     cleanBodyParameters:
-      name: repellendus
-      email: commodi
-      phone: aliquam
+      name: et
+      email: suscipit
+      phone: sunt
     fileParameters: []
     responses: []
     responseFields: []

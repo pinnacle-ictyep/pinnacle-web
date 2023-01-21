@@ -2,6 +2,7 @@
 
 namespace App\Models;
 
+use App\Models\Booking;
 use App\Models\Gallery;
 use App\Models\Roomtype;
 use Illuminate\Database\Eloquent\Model;
@@ -19,6 +20,10 @@ class Hotel extends Model
 
     public function roomtype(){
         return $this->hasMany(Roomtype::class);
+    }
+
+    public function booking(){
+        return $this->hasMany(Booking::class);
     }
 
     public function user(){
