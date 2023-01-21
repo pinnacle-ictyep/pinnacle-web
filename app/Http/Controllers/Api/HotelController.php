@@ -34,7 +34,7 @@ class HotelController extends Controller
 
     public function show($id)
     {
-        $hotel = Hotel::findOrFail($id);
+        $hotel = Hotel::where('id',$id)->with('roomtype', 'gallery')->first();
 
         if ($hotel->count() < 0) {
             return response()->json([

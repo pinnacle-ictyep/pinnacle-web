@@ -26,7 +26,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::post('/login', [AuthController::class, 'login']);
 Route::post('/register', [AuthController::class, 'register']);
 
-Route::group(['middleware'=> 'auth:sanctum'], function (){
+// Route::group(['middleware'=> 'auth:sanctum'], function (){
 
 Route::get('/profile/{id}', [AuthController::class, 'edit']);
 Route::post('/editprofile/{id}', [AuthController::class, 'update']);
@@ -43,4 +43,4 @@ Route::get('/roomtype/{id}', [RoomtypeController::class, 'show']);
 Route::get('/gallery', [GalleryController::class, 'index']);
 Route::get('/gallery/{id}', [GalleryController::class, 'show']);
 
-});
+// });
