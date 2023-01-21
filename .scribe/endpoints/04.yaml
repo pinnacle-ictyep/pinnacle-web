@@ -1,17 +1,17 @@
-name: 'Hotel Management'
+name: 'Gallery Management'
 description: |-
 
-  Apis to manage the Hotel resource.
+  Apis to manage the gallery resource.
 endpoints:
   -
     httpMethods:
       - GET
-    uri: api/hotel
+    uri: api/gallery
     metadata:
-      groupName: 'Hotel Management'
+      groupName: 'Gallery Management'
       groupDescription: |-
 
-        Apis to manage the Hotel resource.
+        Apis to manage the gallery resource.
       subgroup: ''
       subgroupDescription: ''
       title: ''
@@ -47,12 +47,12 @@ endpoints:
   -
     httpMethods:
       - GET
-    uri: 'api/hotel/{id}'
+    uri: 'api/gallery/{id}'
     metadata:
-      groupName: 'Hotel Management'
+      groupName: 'Gallery Management'
       groupDescription: |-
 
-        Apis to manage the Hotel resource.
+        Apis to manage the gallery resource.
       subgroup: ''
       subgroupDescription: ''
       title: ''
@@ -65,7 +65,7 @@ endpoints:
     urlParameters:
       id:
         name: id
-        description: 'The ID of the hotel.'
+        description: 'The ID of the gallery.'
         required: true
         example: 1
         type: integer

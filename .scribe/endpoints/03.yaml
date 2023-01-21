@@ -1,17 +1,17 @@
-name: 'Gallery Management'
+name: 'Roomtype Management'
 description: |-
 
-  Apis to manage the gallery resource.
+  Apis to manage the roomtype resource.
 endpoints:
   -
     httpMethods:
       - GET
-    uri: api/gallery
+    uri: api/roomtype
     metadata:
-      groupName: 'Gallery Management'
+      groupName: 'Roomtype Management'
       groupDescription: |-
 
-        Apis to manage the gallery resource.
+        Apis to manage the roomtype resource.
       subgroup: ''
       subgroupDescription: ''
       title: ''
@@ -47,12 +47,12 @@ endpoints:
   -
     httpMethods:
       - GET
-    uri: 'api/gallery/{id}'
+    uri: 'api/roomtype/{id}'
     metadata:
-      groupName: 'Gallery Management'
+      groupName: 'Roomtype Management'
       groupDescription: |-
 
-        Apis to manage the gallery resource.
+        Apis to manage the roomtype resource.
       subgroup: ''
       subgroupDescription: ''
       title: ''
@@ -65,7 +65,7 @@ endpoints:
     urlParameters:
       id:
         name: id
-        description: 'The ID of the gallery.'
+        description: 'The ID of the roomtype.'
         required: true
         example: 1
         type: integer

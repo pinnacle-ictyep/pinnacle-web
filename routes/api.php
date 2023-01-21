@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\AuthController;
 use App\Http\Controllers\Api\HotelController;
+use App\Http\Controllers\Api\GalleryController;
 use App\Http\Controllers\Api\RoomtypeController;
 
 /*
@@ -27,22 +28,19 @@ Route::post('/register', [AuthController::class, 'register']);
 
 Route::group(['middleware'=> 'auth:sanctum'], function (){
 
-Route::get('/profile/{id}', [AuthController::class, 'profile']);
-Route::post('/editprofile/{id}', [AuthController::class, 'updateprofile']);
+Route::get('/profile/{id}', [AuthController::class, 'edit']);
+Route::post('/editprofile/{id}', [AuthController::class, 'update']);
 
 //hotel route
-Route::post('/createhotel', [HotelController::class, 'store']);
-Route::post('/edithotel/{id}', [HotelController::class, 'update']);
-Route::delete('/edithotel/{id}', [HotelController::class, 'destroy']);
 Route::get('/hotel', [HotelController::class, 'index']);
 Route::get('/hotel/{id}', [HotelController::class, 'show']);
-Route::get('/roomtypes', [HotelController::class, 'showroom']);
-Route::get('/gallery', [HotelController::class, 'gallery']);
+
+//roomtypes route
+Route::get('/roomtype', [RoomtypeController::class, 'index']);
+Route::get('/roomtype/{id}', [RoomtypeController::class, 'show']);
+
+//gallery route
+Route::get('/gallery', [GalleryController::class, 'index']);
+Route::get('/gallery/{id}', [GalleryController::class, 'show']);
 
 });
-
-
-
-
-// roomtype
-Route::resource('/roomtype', RoomtypeController::class);

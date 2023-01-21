@@ -66,6 +66,16 @@
                     <a href="#authenticating-requests">Authenticating requests</a>
                 </li>
                             </ul>
+                    <ul id="tocify-header-endpoints" class="tocify-header">
+                <li class="tocify-item level-1" data-unique="endpoints">
+                    <a href="#endpoints">Endpoints</a>
+                </li>
+                                    <ul id="tocify-subheader-endpoints" class="tocify-subheader">
+                                                    <li class="tocify-item level-2" data-unique="endpoints-GETapi-user">
+                                <a href="#endpoints-GETapi-user">GET api/user</a>
+                            </li>
+                                                                        </ul>
+                            </ul>
                     <ul id="tocify-header-gallery-management" class="tocify-header">
                 <li class="tocify-item level-1" data-unique="gallery-management">
                     <a href="#gallery-management">Gallery Management</a>
@@ -97,11 +107,11 @@
                     <a href="#roomtype-management">Roomtype Management</a>
                 </li>
                                     <ul id="tocify-subheader-roomtype-management" class="tocify-subheader">
-                                                    <li class="tocify-item level-2" data-unique="roomtype-management-GETapi-roomtypes">
-                                <a href="#roomtype-management-GETapi-roomtypes">GET api/roomtypes</a>
+                                                    <li class="tocify-item level-2" data-unique="roomtype-management-GETapi-roomtype">
+                                <a href="#roomtype-management-GETapi-roomtype">GET api/roomtype</a>
                             </li>
-                                                                                <li class="tocify-item level-2" data-unique="roomtype-management-GETapi-roomtypes--id-">
-                                <a href="#roomtype-management-GETapi-roomtypes--id-">GET api/roomtypes/{id}</a>
+                                                                                <li class="tocify-item level-2" data-unique="roomtype-management-GETapi-roomtype--id-">
+                                <a href="#roomtype-management-GETapi-roomtype--id-">GET api/roomtype/{id}</a>
                             </li>
                                                                         </ul>
                             </ul>
@@ -133,7 +143,7 @@
     </ul>
 
     <ul class="toc-footer" id="last-updated">
-        <li>Last updated: January 20, 2023</li>
+        <li>Last updated: January 21, 2023</li>
     </ul>
 </div>
 
@@ -151,7 +161,127 @@ You can switch the language used with the tabs at the top right (or from the nav
         <h1 id="authenticating-requests">Authenticating requests</h1>
 <p>This API is not authenticated.</p>
 
-        <h1 id="gallery-management">Gallery Management</h1>
+        <h1 id="endpoints">Endpoints</h1>
+
+    
+
+                                <h2 id="endpoints-GETapi-user">GET api/user</h2>
+
+<p>
+</p>
+
+
+
+<span id="example-requests-GETapi-user">
+<blockquote>Example request:</blockquote>
+
+
+<div class="bash-example">
+    <pre><code class="language-bash">curl --request GET \
+    --get "http://localhost/api/user" \
+    --header "Content-Type: application/json" \
+    --header "Accept: application/json"</code></pre></div>
+
+
+<div class="javascript-example">
+    <pre><code class="language-javascript">const url = new URL(
+    "http://localhost/api/user"
+);
+
+const headers = {
+    "Content-Type": "application/json",
+    "Accept": "application/json",
+};
+
+fetch(url, {
+    method: "GET",
+    headers,
+}).then(response =&gt; response.json());</code></pre></div>
+
+</span>
+
+<span id="example-responses-GETapi-user">
+            <blockquote>
+            <p>Example response (401):</p>
+        </blockquote>
+                <details class="annotation">
+            <summary style="cursor: pointer;">
+                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
+            </summary>
+            <pre><code class="language-http">cache-control: no-cache, private
+content-type: application/json
+access-control-allow-origin: *
+ </code></pre></details>         <pre>
+
+<code class="language-json" style="max-height: 300px;">{
+    &quot;message&quot;: &quot;Unauthenticated.&quot;
+}</code>
+ </pre>
+    </span>
+<span id="execution-results-GETapi-user" hidden>
+    <blockquote>Received response<span
+                id="execution-response-status-GETapi-user"></span>:
+    </blockquote>
+    <pre class="json"><code id="execution-response-content-GETapi-user" style="max-height: 400px;"></code></pre>
+</span>
+<span id="execution-error-GETapi-user" hidden>
+    <blockquote>Request failed with error:</blockquote>
+    <pre><code id="execution-error-message-GETapi-user"></code></pre>
+</span>
+<form id="form-GETapi-user" data-method="GET"
+      data-path="api/user"
+      data-authed="0"
+      data-hasfiles="0"
+      data-isarraybody="0"
+      autocomplete="off"
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-user', this);">
+    <h3>
+        Request&nbsp;&nbsp;&nbsp;
+                    <button type="button"
+                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-tryout-GETapi-user"
+                    onclick="tryItOut('GETapi-user');">Try it out ⚡
+            </button>
+            <button type="button"
+                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-canceltryout-GETapi-user"
+                    onclick="cancelTryOut('GETapi-user');" hidden>Cancel 🛑
+            </button>&nbsp;&nbsp;
+            <button type="submit"
+                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
+                    id="btn-executetryout-GETapi-user" hidden>Send Request 💥
+            </button>
+            </h3>
+            <p>
+            <small class="badge badge-green">GET</small>
+            <b><code>api/user</code></b>
+        </p>
+                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+               name="Content-Type"                data-endpoint="GETapi-user"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                                <div style="padding-left: 28px; clear: unset;">
+                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
+&nbsp;
+ &nbsp;
+                <input type="text" style="display: none"
+               name="Accept"                data-endpoint="GETapi-user"
+               value="application/json"
+               data-component="header">
+    <br>
+<p>Example: <code>application/json</code></p>
+            </div>
+                        </form>
+
+                <h1 id="gallery-management">Gallery Management</h1>
 
     <p>Apis to manage the gallery resource.</p>
 
@@ -532,14 +662,14 @@ access-control-allow-origin: *
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost/api/hotel/2" \
+    --get "http://localhost/api/hotel/1" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/hotel/2"
+    "http://localhost/api/hotel/1"
 );
 
 const headers = {
@@ -640,10 +770,10 @@ access-control-allow-origin: *
  &nbsp;
                 <input type="number" style="display: none"
                name="id"                data-endpoint="GETapi-hotel--id-"
-               value="2"
+               value="1"
                data-component="url">
     <br>
-<p>The ID of the hotel. Example: <code>2</code></p>
+<p>The ID of the hotel. Example: <code>1</code></p>
             </div>
                     </form>
 
@@ -651,27 +781,27 @@ access-control-allow-origin: *
 
     <p>Apis to manage the roomtype resource.</p>
 
-                                <h2 id="roomtype-management-GETapi-roomtypes">GET api/roomtypes</h2>
+                                <h2 id="roomtype-management-GETapi-roomtype">GET api/roomtype</h2>
 
 <p>
 </p>
 
 
 
-<span id="example-requests-GETapi-roomtypes">
+<span id="example-requests-GETapi-roomtype">
 <blockquote>Example request:</blockquote>
 
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost/api/roomtypes" \
+    --get "http://localhost/api/roomtype" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/roomtypes"
+    "http://localhost/api/roomtype"
 );
 
 const headers = {
@@ -686,7 +816,7 @@ fetch(url, {
 
 </span>
 
-<span id="example-responses-GETapi-roomtypes">
+<span id="example-responses-GETapi-roomtype">
             <blockquote>
             <p>Example response (401):</p>
         </blockquote>
@@ -704,43 +834,43 @@ access-control-allow-origin: *
 }</code>
  </pre>
     </span>
-<span id="execution-results-GETapi-roomtypes" hidden>
+<span id="execution-results-GETapi-roomtype" hidden>
     <blockquote>Received response<span
-                id="execution-response-status-GETapi-roomtypes"></span>:
+                id="execution-response-status-GETapi-roomtype"></span>:
     </blockquote>
-    <pre class="json"><code id="execution-response-content-GETapi-roomtypes" style="max-height: 400px;"></code></pre>
+    <pre class="json"><code id="execution-response-content-GETapi-roomtype" style="max-height: 400px;"></code></pre>
 </span>
-<span id="execution-error-GETapi-roomtypes" hidden>
+<span id="execution-error-GETapi-roomtype" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETapi-roomtypes"></code></pre>
+    <pre><code id="execution-error-message-GETapi-roomtype"></code></pre>
 </span>
-<form id="form-GETapi-roomtypes" data-method="GET"
-      data-path="api/roomtypes"
+<form id="form-GETapi-roomtype" data-method="GET"
+      data-path="api/roomtype"
       data-authed="0"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('GETapi-roomtypes', this);">
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-roomtype', this);">
     <h3>
         Request&nbsp;&nbsp;&nbsp;
                     <button type="button"
                     style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-GETapi-roomtypes"
-                    onclick="tryItOut('GETapi-roomtypes');">Try it out ⚡
+                    id="btn-tryout-GETapi-roomtype"
+                    onclick="tryItOut('GETapi-roomtype');">Try it out ⚡
             </button>
             <button type="button"
                     style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-GETapi-roomtypes"
-                    onclick="cancelTryOut('GETapi-roomtypes');" hidden>Cancel 🛑
+                    id="btn-canceltryout-GETapi-roomtype"
+                    onclick="cancelTryOut('GETapi-roomtype');" hidden>Cancel 🛑
             </button>&nbsp;&nbsp;
             <button type="submit"
                     style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-GETapi-roomtypes" hidden>Send Request 💥
+                    id="btn-executetryout-GETapi-roomtype" hidden>Send Request 💥
             </button>
             </h3>
             <p>
             <small class="badge badge-green">GET</small>
-            <b><code>api/roomtypes</code></b>
+            <b><code>api/roomtype</code></b>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
                                 <div style="padding-left: 28px; clear: unset;">
@@ -748,7 +878,7 @@ access-control-allow-origin: *
 &nbsp;
  &nbsp;
                 <input type="text" style="display: none"
-               name="Content-Type"                data-endpoint="GETapi-roomtypes"
+               name="Content-Type"                data-endpoint="GETapi-roomtype"
                value="application/json"
                data-component="header">
     <br>
@@ -759,7 +889,7 @@ access-control-allow-origin: *
 &nbsp;
  &nbsp;
                 <input type="text" style="display: none"
-               name="Accept"                data-endpoint="GETapi-roomtypes"
+               name="Accept"                data-endpoint="GETapi-roomtype"
                value="application/json"
                data-component="header">
     <br>
@@ -767,27 +897,27 @@ access-control-allow-origin: *
             </div>
                         </form>
 
-                    <h2 id="roomtype-management-GETapi-roomtypes--id-">GET api/roomtypes/{id}</h2>
+                    <h2 id="roomtype-management-GETapi-roomtype--id-">GET api/roomtype/{id}</h2>
 
 <p>
 </p>
 
 
 
-<span id="example-requests-GETapi-roomtypes--id-">
+<span id="example-requests-GETapi-roomtype--id-">
 <blockquote>Example request:</blockquote>
 
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost/api/roomtypes/1" \
+    --get "http://localhost/api/roomtype/1" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/roomtypes/1"
+    "http://localhost/api/roomtype/1"
 );
 
 const headers = {
@@ -802,7 +932,7 @@ fetch(url, {
 
 </span>
 
-<span id="example-responses-GETapi-roomtypes--id-">
+<span id="example-responses-GETapi-roomtype--id-">
             <blockquote>
             <p>Example response (401):</p>
         </blockquote>
@@ -820,43 +950,43 @@ access-control-allow-origin: *
 }</code>
  </pre>
     </span>
-<span id="execution-results-GETapi-roomtypes--id-" hidden>
+<span id="execution-results-GETapi-roomtype--id-" hidden>
     <blockquote>Received response<span
-                id="execution-response-status-GETapi-roomtypes--id-"></span>:
+                id="execution-response-status-GETapi-roomtype--id-"></span>:
     </blockquote>
-    <pre class="json"><code id="execution-response-content-GETapi-roomtypes--id-" style="max-height: 400px;"></code></pre>
+    <pre class="json"><code id="execution-response-content-GETapi-roomtype--id-" style="max-height: 400px;"></code></pre>
 </span>
-<span id="execution-error-GETapi-roomtypes--id-" hidden>
+<span id="execution-error-GETapi-roomtype--id-" hidden>
     <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETapi-roomtypes--id-"></code></pre>
+    <pre><code id="execution-error-message-GETapi-roomtype--id-"></code></pre>
 </span>
-<form id="form-GETapi-roomtypes--id-" data-method="GET"
-      data-path="api/roomtypes/{id}"
+<form id="form-GETapi-roomtype--id-" data-method="GET"
+      data-path="api/roomtype/{id}"
       data-authed="0"
       data-hasfiles="0"
       data-isarraybody="0"
       autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('GETapi-roomtypes--id-', this);">
+      onsubmit="event.preventDefault(); executeTryOut('GETapi-roomtype--id-', this);">
     <h3>
         Request&nbsp;&nbsp;&nbsp;
                     <button type="button"
                     style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-GETapi-roomtypes--id-"
-                    onclick="tryItOut('GETapi-roomtypes--id-');">Try it out ⚡
+                    id="btn-tryout-GETapi-roomtype--id-"
+                    onclick="tryItOut('GETapi-roomtype--id-');">Try it out ⚡
             </button>
             <button type="button"
                     style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-GETapi-roomtypes--id-"
-                    onclick="cancelTryOut('GETapi-roomtypes--id-');" hidden>Cancel 🛑
+                    id="btn-canceltryout-GETapi-roomtype--id-"
+                    onclick="cancelTryOut('GETapi-roomtype--id-');" hidden>Cancel 🛑
             </button>&nbsp;&nbsp;
             <button type="submit"
                     style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-GETapi-roomtypes--id-" hidden>Send Request 💥
+                    id="btn-executetryout-GETapi-roomtype--id-" hidden>Send Request 💥
             </button>
             </h3>
             <p>
             <small class="badge badge-green">GET</small>
-            <b><code>api/roomtypes/{id}</code></b>
+            <b><code>api/roomtype/{id}</code></b>
         </p>
                 <h4 class="fancy-heading-panel"><b>Headers</b></h4>
                                 <div style="padding-left: 28px; clear: unset;">
@@ -864,7 +994,7 @@ access-control-allow-origin: *
 &nbsp;
  &nbsp;
                 <input type="text" style="display: none"
-               name="Content-Type"                data-endpoint="GETapi-roomtypes--id-"
+               name="Content-Type"                data-endpoint="GETapi-roomtype--id-"
                value="application/json"
                data-component="header">
     <br>
@@ -875,7 +1005,7 @@ access-control-allow-origin: *
 &nbsp;
  &nbsp;
                 <input type="text" style="display: none"
-               name="Accept"                data-endpoint="GETapi-roomtypes--id-"
+               name="Accept"                data-endpoint="GETapi-roomtype--id-"
                value="application/json"
                data-component="header">
     <br>
@@ -887,7 +1017,7 @@ access-control-allow-origin: *
 <small>integer</small>&nbsp;
  &nbsp;
                 <input type="number" style="display: none"
-               name="id"                data-endpoint="GETapi-roomtypes--id-"
+               name="id"                data-endpoint="GETapi-roomtype--id-"
                value="1"
                data-component="url">
     <br>
@@ -916,8 +1046,8 @@ access-control-allow-origin: *
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"email\": \"marvin.christine@example.net\",
-    \"password\": \"qui\"
+    \"email\": \"suzanne34@example.com\",
+    \"password\": \"natus\"
 }"
 </code></pre></div>
 
@@ -933,8 +1063,8 @@ const headers = {
 };
 
 let body = {
-    "email": "marvin.christine@example.net",
-    "password": "qui"
+    "email": "suzanne34@example.com",
+    "password": "natus"
 };
 
 fetch(url, {
@@ -1015,10 +1145,10 @@ fetch(url, {
  &nbsp;
                 <input type="text" style="display: none"
                name="email"                data-endpoint="POSTapi-login"
-               value="marvin.christine@example.net"
+               value="suzanne34@example.com"
                data-component="body">
     <br>
-<p>Must be a valid email address. Example: <code>marvin.christine@example.net</code></p>
+<p>Must be a valid email address. Example: <code>suzanne34@example.com</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>password</code></b>&nbsp;&nbsp;
@@ -1026,10 +1156,10 @@ fetch(url, {
  &nbsp;
                 <input type="text" style="display: none"
                name="password"                data-endpoint="POSTapi-login"
-               value="qui"
+               value="natus"
                data-component="body">
     <br>
-<p>Example: <code>qui</code></p>
+<p>Example: <code>natus</code></p>
         </div>
         </form>
 
@@ -1050,10 +1180,10 @@ fetch(url, {
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"name\": \"ea\",
-    \"email\": \"sed\",
-    \"phone\": \"non\",
-    \"password\": \"eos\"
+    \"name\": \"dolores\",
+    \"email\": \"tenetur\",
+    \"phone\": \"pariatur\",
+    \"password\": \"est\"
 }"
 </code></pre></div>
 
@@ -1069,10 +1199,10 @@ const headers = {
 };
 
 let body = {
-    "name": "ea",
-    "email": "sed",
-    "phone": "non",
-    "password": "eos"
+    "name": "dolores",
+    "email": "tenetur",
+    "phone": "pariatur",
+    "password": "est"
 };
 
 fetch(url, {
@@ -1153,10 +1283,10 @@ fetch(url, {
  &nbsp;
                 <input type="text" style="display: none"
                name="name"                data-endpoint="POSTapi-register"
-               value="ea"
+               value="dolores"
                data-component="body">
     <br>
-<p>Example: <code>ea</code></p>
+<p>Example: <code>dolores</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>email</code></b>&nbsp;&nbsp;
@@ -1164,10 +1294,10 @@ fetch(url, {
  &nbsp;
                 <input type="text" style="display: none"
                name="email"                data-endpoint="POSTapi-register"
-               value="sed"
+               value="tenetur"
                data-component="body">
     <br>
-<p>Example: <code>sed</code></p>
+<p>Example: <code>tenetur</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>phone</code></b>&nbsp;&nbsp;
@@ -1175,10 +1305,10 @@ fetch(url, {
  &nbsp;
                 <input type="text" style="display: none"
                name="phone"                data-endpoint="POSTapi-register"
-               value="non"
+               value="pariatur"
                data-component="body">
     <br>
-<p>Example: <code>non</code></p>
+<p>Example: <code>pariatur</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>password</code></b>&nbsp;&nbsp;
@@ -1186,13 +1316,13 @@ fetch(url, {
  &nbsp;
                 <input type="text" style="display: none"
                name="password"                data-endpoint="POSTapi-register"
-               value="eos"
+               value="est"
                data-component="body">
     <br>
 <p>'address' =&gt; 'nullable',
 'image' =&gt; 'nullable',
 'website' =&gt; 'nullable',
-'role' =&gt; 'nullable',. Example: <code>eos</code></p>
+'role' =&gt; 'nullable',. Example: <code>est</code></p>
         </div>
         </form>
 
@@ -1337,20 +1467,20 @@ access-control-allow-origin: *
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
-    "http://localhost/api/editprofile/fugit" \
+    "http://localhost/api/editprofile/ipsum" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"name\": \"vitae\",
-    \"email\": \"id\",
-    \"phone\": \"iusto\"
+    \"name\": \"id\",
+    \"email\": \"laboriosam\",
+    \"phone\": \"maxime\"
 }"
 </code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/editprofile/fugit"
+    "http://localhost/api/editprofile/ipsum"
 );
 
 const headers = {
@@ -1359,9 +1489,9 @@ const headers = {
 };
 
 let body = {
-    "name": "vitae",
-    "email": "id",
-    "phone": "iusto"
+    "name": "id",
+    "email": "laboriosam",
+    "phone": "maxime"
 };
 
 fetch(url, {
@@ -1442,10 +1572,10 @@ fetch(url, {
  &nbsp;
                 <input type="text" style="display: none"
                name="id"                data-endpoint="POSTapi-editprofile--id-"
-               value="fugit"
+               value="ipsum"
                data-component="url">
     <br>
-<p>The ID of the editprofile. Example: <code>fugit</code></p>
+<p>The ID of the editprofile. Example: <code>ipsum</code></p>
             </div>
                             <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
         <div style=" padding-left: 28px;  clear: unset;">
@@ -1454,10 +1584,10 @@ fetch(url, {
  &nbsp;
                 <input type="text" style="display: none"
                name="name"                data-endpoint="POSTapi-editprofile--id-"
-               value="vitae"
+               value="id"
                data-component="body">
     <br>
-<p>Example: <code>vitae</code></p>
+<p>Example: <code>id</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>email</code></b>&nbsp;&nbsp;
@@ -1465,10 +1595,10 @@ fetch(url, {
  &nbsp;
                 <input type="text" style="display: none"
                name="email"                data-endpoint="POSTapi-editprofile--id-"
-               value="id"
+               value="laboriosam"
                data-component="body">
     <br>
-<p>Example: <code>id</code></p>
+<p>Example: <code>laboriosam</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>phone</code></b>&nbsp;&nbsp;
@@ -1476,10 +1606,10 @@ fetch(url, {
  &nbsp;
                 <input type="text" style="display: none"
                name="phone"                data-endpoint="POSTapi-editprofile--id-"
-               value="iusto"
+               value="maxime"
                data-component="body">
     <br>
-<p>Example: <code>iusto</code></p>
+<p>Example: <code>maxime</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>address</code></b>&nbsp;&nbsp;
@@ -1509,6 +1639,17 @@ fetch(url, {
 <i>optional</i> &nbsp;
                 <input type="text" style="display: none"
                name="website"                data-endpoint="POSTapi-editprofile--id-"
+               value=""
+               data-component="body">
+    <br>
+
+        </div>
+                <div style=" padding-left: 28px;  clear: unset;">
+            <b style="line-height: 2;"><code>gender</code></b>&nbsp;&nbsp;
+<small>string</small>&nbsp;
+<i>optional</i> &nbsp;
+                <input type="text" style="display: none"
+               name="gender"                data-endpoint="POSTapi-editprofile--id-"
                value=""
                data-component="body">
     <br>
