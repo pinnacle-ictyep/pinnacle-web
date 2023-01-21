@@ -84,9 +84,6 @@
                                                     <li class="tocify-item level-2" data-unique="gallery-management-GETapi-gallery">
                                 <a href="#gallery-management-GETapi-gallery">GET api/gallery</a>
                             </li>
-                                                                                <li class="tocify-item level-2" data-unique="gallery-management-GETapi-gallery--id-">
-                                <a href="#gallery-management-GETapi-gallery--id-">GET api/gallery/{id}</a>
-                            </li>
                                                                         </ul>
                             </ul>
                     <ul id="tocify-header-hotel-management" class="tocify-header">
@@ -109,9 +106,6 @@
                                     <ul id="tocify-subheader-roomtype-management" class="tocify-subheader">
                                                     <li class="tocify-item level-2" data-unique="roomtype-management-GETapi-roomtype">
                                 <a href="#roomtype-management-GETapi-roomtype">GET api/roomtype</a>
-                            </li>
-                                                                                <li class="tocify-item level-2" data-unique="roomtype-management-GETapi-roomtype--id-">
-                                <a href="#roomtype-management-GETapi-roomtype--id-">GET api/roomtype/{id}</a>
                             </li>
                                                                         </ul>
                             </ul>
@@ -322,7 +316,7 @@ fetch(url, {
 
 <span id="example-responses-GETapi-gallery">
             <blockquote>
-            <p>Example response (401):</p>
+            <p>Example response (200):</p>
         </blockquote>
                 <details class="annotation">
             <summary style="cursor: pointer;">
@@ -330,11 +324,143 @@ fetch(url, {
             </summary>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
+x-ratelimit-limit: 60
+x-ratelimit-remaining: 55
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;message&quot;: &quot;Unauthenticated.&quot;
+    &quot;status&quot;: true,
+    &quot;hotels&quot;: [
+        {
+            &quot;id&quot;: 1,
+            &quot;img_scr&quot;: &quot;image/3P1ykyk2gd6oV9PE7RrkxqSYFPu9uVgUYnpQh8i9.jpg&quot;,
+            &quot;img_alt&quot;: &quot;Creative hotel and suites&quot;,
+            &quot;hotel_id&quot;: &quot;1&quot;,
+            &quot;created_at&quot;: &quot;2023-01-19T08:46:48.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2023-01-19T08:46:48.000000Z&quot;
+        },
+        {
+            &quot;id&quot;: 2,
+            &quot;img_scr&quot;: &quot;image/pwtbZNCiqlK6ayenIsDEYXLqevdWsu3VfMEU8Ygr.jpg&quot;,
+            &quot;img_alt&quot;: &quot;Creative hotel and suites&quot;,
+            &quot;hotel_id&quot;: &quot;1&quot;,
+            &quot;created_at&quot;: &quot;2023-01-19T08:46:48.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2023-01-19T08:46:48.000000Z&quot;
+        },
+        {
+            &quot;id&quot;: 3,
+            &quot;img_scr&quot;: &quot;image/VwBPJ7aiSwV6OxGHxbof7iSXqCro2UzIqKTDoXcH.jpg&quot;,
+            &quot;img_alt&quot;: &quot;Creative hotel and suites&quot;,
+            &quot;hotel_id&quot;: &quot;1&quot;,
+            &quot;created_at&quot;: &quot;2023-01-19T08:46:48.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2023-01-19T08:46:48.000000Z&quot;
+        },
+        {
+            &quot;id&quot;: 6,
+            &quot;img_scr&quot;: &quot;gallery/KB6qR1GlD0B6Davk7DnfLnMKgRPGtLigUcTRR03U.jpg&quot;,
+            &quot;img_alt&quot;: &quot;Creative hotel and suites&quot;,
+            &quot;hotel_id&quot;: &quot;1&quot;,
+            &quot;created_at&quot;: &quot;2023-01-19T08:48:52.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2023-01-19T08:48:52.000000Z&quot;
+        },
+        {
+            &quot;id&quot;: 7,
+            &quot;img_scr&quot;: &quot;gallery/H6Es9AhF3aV6J19UffsnSWzVa7lizIgUNY6rnQOX.jpg&quot;,
+            &quot;img_alt&quot;: &quot;Creative hotel and suites&quot;,
+            &quot;hotel_id&quot;: &quot;1&quot;,
+            &quot;created_at&quot;: &quot;2023-01-19T08:48:52.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2023-01-19T08:48:52.000000Z&quot;
+        },
+        {
+            &quot;id&quot;: 8,
+            &quot;img_scr&quot;: &quot;gallery/0U5zQjbdr0MsuIMuaYSOc2gGgKqecEdMNk1GFZwt.jpg&quot;,
+            &quot;img_alt&quot;: &quot;Creative hotel and suites&quot;,
+            &quot;hotel_id&quot;: &quot;1&quot;,
+            &quot;created_at&quot;: &quot;2023-01-19T08:48:52.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2023-01-19T08:48:52.000000Z&quot;
+        },
+        {
+            &quot;id&quot;: 9,
+            &quot;img_scr&quot;: &quot;image/aKAr3wXfWzSoAKv82XcVDGQVaqpLN8YshXt0pLxS.jpg&quot;,
+            &quot;img_alt&quot;: &quot;FOBBS APARTMENT AND SUITES&quot;,
+            &quot;hotel_id&quot;: &quot;3&quot;,
+            &quot;created_at&quot;: &quot;2023-01-19T09:33:47.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2023-01-19T09:33:47.000000Z&quot;
+        },
+        {
+            &quot;id&quot;: 10,
+            &quot;img_scr&quot;: &quot;image/sy49nMcotcKehwmxJA127bLY4SJRVTTYew8R0qRz.jpg&quot;,
+            &quot;img_alt&quot;: &quot;FOBBS APARTMENT AND SUITES&quot;,
+            &quot;hotel_id&quot;: &quot;3&quot;,
+            &quot;created_at&quot;: &quot;2023-01-19T09:33:48.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2023-01-19T09:33:48.000000Z&quot;
+        },
+        {
+            &quot;id&quot;: 11,
+            &quot;img_scr&quot;: &quot;image/wLbV3fjanNyvIX9fAdDRqwn6yr4BAA2toBwjWRZp.jpg&quot;,
+            &quot;img_alt&quot;: &quot;FOBBS APARTMENT AND SUITES&quot;,
+            &quot;hotel_id&quot;: &quot;3&quot;,
+            &quot;created_at&quot;: &quot;2023-01-19T09:33:48.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2023-01-19T09:33:48.000000Z&quot;
+        },
+        {
+            &quot;id&quot;: 12,
+            &quot;img_scr&quot;: &quot;image/4FPzwoQAGYoLYEhxvGSTpQM6SPtXXAX2iwQIB9OV.jpg&quot;,
+            &quot;img_alt&quot;: &quot;FOBBS APARTMENT AND SUITES&quot;,
+            &quot;hotel_id&quot;: &quot;3&quot;,
+            &quot;created_at&quot;: &quot;2023-01-19T09:33:48.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2023-01-19T09:33:48.000000Z&quot;
+        },
+        {
+            &quot;id&quot;: 13,
+            &quot;img_scr&quot;: &quot;image/uFF9llIlxlidn3zbvOnKI9JO3xpsVJ4oCw7pqCX1.jpg&quot;,
+            &quot;img_alt&quot;: &quot;FOBBS APARTMENT AND SUITES&quot;,
+            &quot;hotel_id&quot;: &quot;3&quot;,
+            &quot;created_at&quot;: &quot;2023-01-19T09:33:48.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2023-01-19T09:33:48.000000Z&quot;
+        },
+        {
+            &quot;id&quot;: 14,
+            &quot;img_scr&quot;: &quot;image/0v3gzGPIM75mOG3n7eRVObSdT77CJqlnayCvGcpA.jpg&quot;,
+            &quot;img_alt&quot;: &quot;FOBBS APARTMENT AND SUITES&quot;,
+            &quot;hotel_id&quot;: &quot;3&quot;,
+            &quot;created_at&quot;: &quot;2023-01-19T09:33:48.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2023-01-19T09:33:48.000000Z&quot;
+        },
+        {
+            &quot;id&quot;: 15,
+            &quot;img_scr&quot;: &quot;image/6RpkKN4s2LmJW1cmQM9CkNCjmjaN437iwbStAQ1Y.jpg&quot;,
+            &quot;img_alt&quot;: &quot;FOBBS APARTMENT AND SUITES&quot;,
+            &quot;hotel_id&quot;: &quot;3&quot;,
+            &quot;created_at&quot;: &quot;2023-01-19T09:33:48.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2023-01-19T09:33:48.000000Z&quot;
+        },
+        {
+            &quot;id&quot;: 16,
+            &quot;img_scr&quot;: &quot;image/7iaoigB07fKX8kCjR9imX6rL5x77zHtVs7ee4PEP.jpg&quot;,
+            &quot;img_alt&quot;: &quot;FOBBS APARTMENT AND SUITES&quot;,
+            &quot;hotel_id&quot;: &quot;3&quot;,
+            &quot;created_at&quot;: &quot;2023-01-19T09:33:48.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2023-01-19T09:33:48.000000Z&quot;
+        },
+        {
+            &quot;id&quot;: 17,
+            &quot;img_scr&quot;: &quot;image/RARo8fF7Nw6bx5uOJXxHuaDpSjgaJdbwG3zbWThy.jpg&quot;,
+            &quot;img_alt&quot;: &quot;Imacul&quot;,
+            &quot;hotel_id&quot;: &quot;4&quot;,
+            &quot;created_at&quot;: &quot;2023-01-19T10:38:23.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2023-01-19T10:38:23.000000Z&quot;
+        },
+        {
+            &quot;id&quot;: 18,
+            &quot;img_scr&quot;: &quot;image/b0RM1ofCNCxMv54yY4MD3Y5dwz9IsPdLmBt1ixMe.jpg&quot;,
+            &quot;img_alt&quot;: &quot;Paragon&quot;,
+            &quot;hotel_id&quot;: &quot;5&quot;,
+            &quot;created_at&quot;: &quot;2023-01-19T10:44:22.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2023-01-19T10:44:22.000000Z&quot;
+        }
+    ]
 }</code>
  </pre>
     </span>
@@ -401,134 +527,6 @@ access-control-allow-origin: *
             </div>
                         </form>
 
-                    <h2 id="gallery-management-GETapi-gallery--id-">GET api/gallery/{id}</h2>
-
-<p>
-</p>
-
-
-
-<span id="example-requests-GETapi-gallery--id-">
-<blockquote>Example request:</blockquote>
-
-
-<div class="bash-example">
-    <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost/api/gallery/1" \
-    --header "Content-Type: application/json" \
-    --header "Accept: application/json"</code></pre></div>
-
-
-<div class="javascript-example">
-    <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/gallery/1"
-);
-
-const headers = {
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-};
-
-fetch(url, {
-    method: "GET",
-    headers,
-}).then(response =&gt; response.json());</code></pre></div>
-
-</span>
-
-<span id="example-responses-GETapi-gallery--id-">
-            <blockquote>
-            <p>Example response (401):</p>
-        </blockquote>
-                <details class="annotation">
-            <summary style="cursor: pointer;">
-                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
-            </summary>
-            <pre><code class="language-http">cache-control: no-cache, private
-content-type: application/json
-access-control-allow-origin: *
- </code></pre></details>         <pre>
-
-<code class="language-json" style="max-height: 300px;">{
-    &quot;message&quot;: &quot;Unauthenticated.&quot;
-}</code>
- </pre>
-    </span>
-<span id="execution-results-GETapi-gallery--id-" hidden>
-    <blockquote>Received response<span
-                id="execution-response-status-GETapi-gallery--id-"></span>:
-    </blockquote>
-    <pre class="json"><code id="execution-response-content-GETapi-gallery--id-" style="max-height: 400px;"></code></pre>
-</span>
-<span id="execution-error-GETapi-gallery--id-" hidden>
-    <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETapi-gallery--id-"></code></pre>
-</span>
-<form id="form-GETapi-gallery--id-" data-method="GET"
-      data-path="api/gallery/{id}"
-      data-authed="0"
-      data-hasfiles="0"
-      data-isarraybody="0"
-      autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('GETapi-gallery--id-', this);">
-    <h3>
-        Request&nbsp;&nbsp;&nbsp;
-                    <button type="button"
-                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-GETapi-gallery--id-"
-                    onclick="tryItOut('GETapi-gallery--id-');">Try it out ⚡
-            </button>
-            <button type="button"
-                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-GETapi-gallery--id-"
-                    onclick="cancelTryOut('GETapi-gallery--id-');" hidden>Cancel 🛑
-            </button>&nbsp;&nbsp;
-            <button type="submit"
-                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-GETapi-gallery--id-" hidden>Send Request 💥
-            </button>
-            </h3>
-            <p>
-            <small class="badge badge-green">GET</small>
-            <b><code>api/gallery/{id}</code></b>
-        </p>
-                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-               name="Content-Type"                data-endpoint="GETapi-gallery--id-"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-               name="Accept"                data-endpoint="GETapi-gallery--id-"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
-                    <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>id</code></b>&nbsp;&nbsp;
-<small>integer</small>&nbsp;
- &nbsp;
-                <input type="number" style="display: none"
-               name="id"                data-endpoint="GETapi-gallery--id-"
-               value="1"
-               data-component="url">
-    <br>
-<p>The ID of the gallery. Example: <code>1</code></p>
-            </div>
-                    </form>
-
                 <h1 id="hotel-management">Hotel Management</h1>
 
     <p>Apis to manage the Hotel resource.</p>
@@ -570,7 +568,7 @@ fetch(url, {
 
 <span id="example-responses-GETapi-hotel">
             <blockquote>
-            <p>Example response (401):</p>
+            <p>Example response (200):</p>
         </blockquote>
                 <details class="annotation">
             <summary style="cursor: pointer;">
@@ -578,11 +576,79 @@ fetch(url, {
             </summary>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
+x-ratelimit-limit: 60
+x-ratelimit-remaining: 58
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;message&quot;: &quot;Unauthenticated.&quot;
+    &quot;status&quot;: true,
+    &quot;hotels&quot;: [
+        {
+            &quot;id&quot;: 1,
+            &quot;name&quot;: &quot;Creative hotel and suites&quot;,
+            &quot;email&quot;: &quot;pinnacle@gmail.com&quot;,
+            &quot;phone&quot;: &quot;07063161583&quot;,
+            &quot;user_id&quot;: &quot;1&quot;,
+            &quot;image&quot;: &quot;image/f3HesJAV3LxRGpH6rihIMMDnrGUKY6w0UAlF7Bsk.jpg&quot;,
+            &quot;address&quot;: &quot;asaba&quot;,
+            &quot;location&quot;: &quot;12 Ejovwo street&quot;,
+            &quot;rules&quot;: &quot;no facemask no entry&quot;,
+            &quot;amenities&quot;: &quot;Swimming pools, Jacuzzi, WIFI&quot;,
+            &quot;description&quot;: &quot;excellent&quot;,
+            &quot;price&quot;: &quot;20,000-40,000&quot;,
+            &quot;created_at&quot;: &quot;2023-01-19T08:46:48.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2023-01-19T08:46:48.000000Z&quot;
+        },
+        {
+            &quot;id&quot;: 3,
+            &quot;name&quot;: &quot;FOBBS APARTMENT AND SUITES&quot;,
+            &quot;email&quot;: &quot;fobbs@gmail.com&quot;,
+            &quot;phone&quot;: &quot;091234556544&quot;,
+            &quot;user_id&quot;: &quot;3&quot;,
+            &quot;image&quot;: &quot;image/H86Oo7vF13j5XqBemkmnbI8weaOPmvIMOPHopM2g.jpg&quot;,
+            &quot;address&quot;: &quot;aasaba&quot;,
+            &quot;location&quot;: &quot;56 street of hope&quot;,
+            &quot;rules&quot;: &quot;do not smoke&quot;,
+            &quot;amenities&quot;: &quot;Swimming pools, Jacuzzi, WIFI&quot;,
+            &quot;description&quot;: &quot;excellentt&quot;,
+            &quot;price&quot;: &quot;25,000-50,000&quot;,
+            &quot;created_at&quot;: &quot;2023-01-19T09:33:47.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2023-01-19T09:36:37.000000Z&quot;
+        },
+        {
+            &quot;id&quot;: 4,
+            &quot;name&quot;: &quot;Imacul&quot;,
+            &quot;email&quot;: &quot;imaculate@gmail.com&quot;,
+            &quot;phone&quot;: &quot;07063161583&quot;,
+            &quot;user_id&quot;: &quot;4&quot;,
+            &quot;image&quot;: &quot;image/vDd4C5nqWNrnI1wTzd7dhKljjjtOY7XUjO61BE2G.jpg&quot;,
+            &quot;address&quot;: &quot;Asaba&quot;,
+            &quot;location&quot;: &quot;vanguard asaba&quot;,
+            &quot;rules&quot;: &quot;wash your handss&quot;,
+            &quot;amenities&quot;: &quot;bathrooms&quot;,
+            &quot;description&quot;: &quot;great&quot;,
+            &quot;price&quot;: &quot;20,000-40,000&quot;,
+            &quot;created_at&quot;: &quot;2023-01-19T10:38:22.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2023-01-19T10:38:22.000000Z&quot;
+        },
+        {
+            &quot;id&quot;: 5,
+            &quot;name&quot;: &quot;Paragon&quot;,
+            &quot;email&quot;: &quot;paragonsuites@gmail.com&quot;,
+            &quot;phone&quot;: &quot;0987655443&quot;,
+            &quot;user_id&quot;: &quot;5&quot;,
+            &quot;image&quot;: &quot;image/QS3K8opuoelyZHnbwj7JsOicg7G2z5ETSGY7JkUx.jpg&quot;,
+            &quot;address&quot;: &quot;bendel estate&quot;,
+            &quot;location&quot;: &quot;bendel estate&quot;,
+            &quot;rules&quot;: &quot;No hard drugs&quot;,
+            &quot;amenities&quot;: &quot;snooker board&quot;,
+            &quot;description&quot;: &quot;24hrs light&quot;,
+            &quot;price&quot;: &quot;7000-13000&quot;,
+            &quot;created_at&quot;: &quot;2023-01-19T10:44:22.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2023-01-19T10:44:22.000000Z&quot;
+        }
+    ]
 }</code>
  </pre>
     </span>
@@ -686,7 +752,7 @@ fetch(url, {
 
 <span id="example-responses-GETapi-hotel--id-">
             <blockquote>
-            <p>Example response (401):</p>
+            <p>Example response (200):</p>
         </blockquote>
                 <details class="annotation">
             <summary style="cursor: pointer;">
@@ -694,11 +760,99 @@ fetch(url, {
             </summary>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
+x-ratelimit-limit: 60
+x-ratelimit-remaining: 57
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;message&quot;: &quot;Unauthenticated.&quot;
+    &quot;status&quot;: true,
+    &quot;hotels&quot;: {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;Creative hotel and suites&quot;,
+        &quot;email&quot;: &quot;pinnacle@gmail.com&quot;,
+        &quot;phone&quot;: &quot;07063161583&quot;,
+        &quot;user_id&quot;: &quot;1&quot;,
+        &quot;image&quot;: &quot;image/f3HesJAV3LxRGpH6rihIMMDnrGUKY6w0UAlF7Bsk.jpg&quot;,
+        &quot;address&quot;: &quot;asaba&quot;,
+        &quot;location&quot;: &quot;12 Ejovwo street&quot;,
+        &quot;rules&quot;: &quot;no facemask no entry&quot;,
+        &quot;amenities&quot;: &quot;Swimming pools, Jacuzzi, WIFI&quot;,
+        &quot;description&quot;: &quot;excellent&quot;,
+        &quot;price&quot;: &quot;20,000-40,000&quot;,
+        &quot;created_at&quot;: &quot;2023-01-19T08:46:48.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2023-01-19T08:46:48.000000Z&quot;,
+        &quot;roomtype&quot;: [
+            {
+                &quot;id&quot;: 1,
+                &quot;title&quot;: &quot;Deluxx&quot;,
+                &quot;image&quot;: &quot;image/stRITm8koaJlH2Dv9sXHdiIWOgZL5Sei89ZbUEVT.jpg&quot;,
+                &quot;price&quot;: &quot;20,000-40,000&quot;,
+                &quot;hotel_id&quot;: &quot;1&quot;,
+                &quot;created_at&quot;: &quot;2023-01-19T08:32:22.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2023-01-19T08:32:22.000000Z&quot;
+            },
+            {
+                &quot;id&quot;: 2,
+                &quot;title&quot;: &quot;Delux&quot;,
+                &quot;image&quot;: &quot;image/d6OokquiCRFkF1EYKBpJuNZm5OEyvplYsXVxWJ2g.jpg&quot;,
+                &quot;price&quot;: &quot;25,000-50,000&quot;,
+                &quot;hotel_id&quot;: &quot;1&quot;,
+                &quot;created_at&quot;: &quot;2023-01-19T08:33:44.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2023-01-19T08:33:44.000000Z&quot;
+            }
+        ],
+        &quot;gallery&quot;: [
+            {
+                &quot;id&quot;: 1,
+                &quot;img_scr&quot;: &quot;image/3P1ykyk2gd6oV9PE7RrkxqSYFPu9uVgUYnpQh8i9.jpg&quot;,
+                &quot;img_alt&quot;: &quot;Creative hotel and suites&quot;,
+                &quot;hotel_id&quot;: &quot;1&quot;,
+                &quot;created_at&quot;: &quot;2023-01-19T08:46:48.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2023-01-19T08:46:48.000000Z&quot;
+            },
+            {
+                &quot;id&quot;: 2,
+                &quot;img_scr&quot;: &quot;image/pwtbZNCiqlK6ayenIsDEYXLqevdWsu3VfMEU8Ygr.jpg&quot;,
+                &quot;img_alt&quot;: &quot;Creative hotel and suites&quot;,
+                &quot;hotel_id&quot;: &quot;1&quot;,
+                &quot;created_at&quot;: &quot;2023-01-19T08:46:48.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2023-01-19T08:46:48.000000Z&quot;
+            },
+            {
+                &quot;id&quot;: 3,
+                &quot;img_scr&quot;: &quot;image/VwBPJ7aiSwV6OxGHxbof7iSXqCro2UzIqKTDoXcH.jpg&quot;,
+                &quot;img_alt&quot;: &quot;Creative hotel and suites&quot;,
+                &quot;hotel_id&quot;: &quot;1&quot;,
+                &quot;created_at&quot;: &quot;2023-01-19T08:46:48.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2023-01-19T08:46:48.000000Z&quot;
+            },
+            {
+                &quot;id&quot;: 6,
+                &quot;img_scr&quot;: &quot;gallery/KB6qR1GlD0B6Davk7DnfLnMKgRPGtLigUcTRR03U.jpg&quot;,
+                &quot;img_alt&quot;: &quot;Creative hotel and suites&quot;,
+                &quot;hotel_id&quot;: &quot;1&quot;,
+                &quot;created_at&quot;: &quot;2023-01-19T08:48:52.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2023-01-19T08:48:52.000000Z&quot;
+            },
+            {
+                &quot;id&quot;: 7,
+                &quot;img_scr&quot;: &quot;gallery/H6Es9AhF3aV6J19UffsnSWzVa7lizIgUNY6rnQOX.jpg&quot;,
+                &quot;img_alt&quot;: &quot;Creative hotel and suites&quot;,
+                &quot;hotel_id&quot;: &quot;1&quot;,
+                &quot;created_at&quot;: &quot;2023-01-19T08:48:52.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2023-01-19T08:48:52.000000Z&quot;
+            },
+            {
+                &quot;id&quot;: 8,
+                &quot;img_scr&quot;: &quot;gallery/0U5zQjbdr0MsuIMuaYSOc2gGgKqecEdMNk1GFZwt.jpg&quot;,
+                &quot;img_alt&quot;: &quot;Creative hotel and suites&quot;,
+                &quot;hotel_id&quot;: &quot;1&quot;,
+                &quot;created_at&quot;: &quot;2023-01-19T08:48:52.000000Z&quot;,
+                &quot;updated_at&quot;: &quot;2023-01-19T08:48:52.000000Z&quot;
+            }
+        ]
+    }
 }</code>
  </pre>
     </span>
@@ -818,7 +972,7 @@ fetch(url, {
 
 <span id="example-responses-GETapi-roomtype">
             <blockquote>
-            <p>Example response (401):</p>
+            <p>Example response (200):</p>
         </blockquote>
                 <details class="annotation">
             <summary style="cursor: pointer;">
@@ -826,11 +980,33 @@ fetch(url, {
             </summary>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
+x-ratelimit-limit: 60
+x-ratelimit-remaining: 56
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;message&quot;: &quot;Unauthenticated.&quot;
+    &quot;status&quot;: true,
+    &quot;roomtypes&quot;: [
+        {
+            &quot;id&quot;: 1,
+            &quot;title&quot;: &quot;Deluxx&quot;,
+            &quot;image&quot;: &quot;image/stRITm8koaJlH2Dv9sXHdiIWOgZL5Sei89ZbUEVT.jpg&quot;,
+            &quot;price&quot;: &quot;20,000-40,000&quot;,
+            &quot;hotel_id&quot;: &quot;1&quot;,
+            &quot;created_at&quot;: &quot;2023-01-19T08:32:22.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2023-01-19T08:32:22.000000Z&quot;
+        },
+        {
+            &quot;id&quot;: 2,
+            &quot;title&quot;: &quot;Delux&quot;,
+            &quot;image&quot;: &quot;image/d6OokquiCRFkF1EYKBpJuNZm5OEyvplYsXVxWJ2g.jpg&quot;,
+            &quot;price&quot;: &quot;25,000-50,000&quot;,
+            &quot;hotel_id&quot;: &quot;1&quot;,
+            &quot;created_at&quot;: &quot;2023-01-19T08:33:44.000000Z&quot;,
+            &quot;updated_at&quot;: &quot;2023-01-19T08:33:44.000000Z&quot;
+        }
+    ]
 }</code>
  </pre>
     </span>
@@ -897,134 +1073,6 @@ access-control-allow-origin: *
             </div>
                         </form>
 
-                    <h2 id="roomtype-management-GETapi-roomtype--id-">GET api/roomtype/{id}</h2>
-
-<p>
-</p>
-
-
-
-<span id="example-requests-GETapi-roomtype--id-">
-<blockquote>Example request:</blockquote>
-
-
-<div class="bash-example">
-    <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost/api/roomtype/1" \
-    --header "Content-Type: application/json" \
-    --header "Accept: application/json"</code></pre></div>
-
-
-<div class="javascript-example">
-    <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/roomtype/1"
-);
-
-const headers = {
-    "Content-Type": "application/json",
-    "Accept": "application/json",
-};
-
-fetch(url, {
-    method: "GET",
-    headers,
-}).then(response =&gt; response.json());</code></pre></div>
-
-</span>
-
-<span id="example-responses-GETapi-roomtype--id-">
-            <blockquote>
-            <p>Example response (401):</p>
-        </blockquote>
-                <details class="annotation">
-            <summary style="cursor: pointer;">
-                <small onclick="textContent = parentElement.parentElement.open ? 'Show headers' : 'Hide headers'">Show headers</small>
-            </summary>
-            <pre><code class="language-http">cache-control: no-cache, private
-content-type: application/json
-access-control-allow-origin: *
- </code></pre></details>         <pre>
-
-<code class="language-json" style="max-height: 300px;">{
-    &quot;message&quot;: &quot;Unauthenticated.&quot;
-}</code>
- </pre>
-    </span>
-<span id="execution-results-GETapi-roomtype--id-" hidden>
-    <blockquote>Received response<span
-                id="execution-response-status-GETapi-roomtype--id-"></span>:
-    </blockquote>
-    <pre class="json"><code id="execution-response-content-GETapi-roomtype--id-" style="max-height: 400px;"></code></pre>
-</span>
-<span id="execution-error-GETapi-roomtype--id-" hidden>
-    <blockquote>Request failed with error:</blockquote>
-    <pre><code id="execution-error-message-GETapi-roomtype--id-"></code></pre>
-</span>
-<form id="form-GETapi-roomtype--id-" data-method="GET"
-      data-path="api/roomtype/{id}"
-      data-authed="0"
-      data-hasfiles="0"
-      data-isarraybody="0"
-      autocomplete="off"
-      onsubmit="event.preventDefault(); executeTryOut('GETapi-roomtype--id-', this);">
-    <h3>
-        Request&nbsp;&nbsp;&nbsp;
-                    <button type="button"
-                    style="background-color: #8fbcd4; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-tryout-GETapi-roomtype--id-"
-                    onclick="tryItOut('GETapi-roomtype--id-');">Try it out ⚡
-            </button>
-            <button type="button"
-                    style="background-color: #c97a7e; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-canceltryout-GETapi-roomtype--id-"
-                    onclick="cancelTryOut('GETapi-roomtype--id-');" hidden>Cancel 🛑
-            </button>&nbsp;&nbsp;
-            <button type="submit"
-                    style="background-color: #6ac174; padding: 5px 10px; border-radius: 5px; border-width: thin;"
-                    id="btn-executetryout-GETapi-roomtype--id-" hidden>Send Request 💥
-            </button>
-            </h3>
-            <p>
-            <small class="badge badge-green">GET</small>
-            <b><code>api/roomtype/{id}</code></b>
-        </p>
-                <h4 class="fancy-heading-panel"><b>Headers</b></h4>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Content-Type</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-               name="Content-Type"                data-endpoint="GETapi-roomtype--id-"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                                <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>Accept</code></b>&nbsp;&nbsp;
-&nbsp;
- &nbsp;
-                <input type="text" style="display: none"
-               name="Accept"                data-endpoint="GETapi-roomtype--id-"
-               value="application/json"
-               data-component="header">
-    <br>
-<p>Example: <code>application/json</code></p>
-            </div>
-                        <h4 class="fancy-heading-panel"><b>URL Parameters</b></h4>
-                    <div style="padding-left: 28px; clear: unset;">
-                <b style="line-height: 2;"><code>id</code></b>&nbsp;&nbsp;
-<small>integer</small>&nbsp;
- &nbsp;
-                <input type="number" style="display: none"
-               name="id"                data-endpoint="GETapi-roomtype--id-"
-               value="1"
-               data-component="url">
-    <br>
-<p>The ID of the roomtype. Example: <code>1</code></p>
-            </div>
-                    </form>
-
                 <h1 id="user-management">User Management</h1>
 
     <p>Apis to manage the user resource.</p>
@@ -1046,8 +1094,8 @@ access-control-allow-origin: *
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"email\": \"suzanne34@example.com\",
-    \"password\": \"natus\"
+    \"email\": \"jrau@example.org\",
+    \"password\": \"eaque\"
 }"
 </code></pre></div>
 
@@ -1063,8 +1111,8 @@ const headers = {
 };
 
 let body = {
-    "email": "suzanne34@example.com",
-    "password": "natus"
+    "email": "jrau@example.org",
+    "password": "eaque"
 };
 
 fetch(url, {
@@ -1145,10 +1193,10 @@ fetch(url, {
  &nbsp;
                 <input type="text" style="display: none"
                name="email"                data-endpoint="POSTapi-login"
-               value="suzanne34@example.com"
+               value="jrau@example.org"
                data-component="body">
     <br>
-<p>Must be a valid email address. Example: <code>suzanne34@example.com</code></p>
+<p>Must be a valid email address. Example: <code>jrau@example.org</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>password</code></b>&nbsp;&nbsp;
@@ -1156,10 +1204,10 @@ fetch(url, {
  &nbsp;
                 <input type="text" style="display: none"
                name="password"                data-endpoint="POSTapi-login"
-               value="natus"
+               value="eaque"
                data-component="body">
     <br>
-<p>Example: <code>natus</code></p>
+<p>Example: <code>eaque</code></p>
         </div>
         </form>
 
@@ -1180,10 +1228,10 @@ fetch(url, {
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"name\": \"dolores\",
-    \"email\": \"tenetur\",
-    \"phone\": \"pariatur\",
-    \"password\": \"est\"
+    \"name\": \"qui\",
+    \"email\": \"laborum\",
+    \"phone\": \"officiis\",
+    \"password\": \"unde\"
 }"
 </code></pre></div>
 
@@ -1199,10 +1247,10 @@ const headers = {
 };
 
 let body = {
-    "name": "dolores",
-    "email": "tenetur",
-    "phone": "pariatur",
-    "password": "est"
+    "name": "qui",
+    "email": "laborum",
+    "phone": "officiis",
+    "password": "unde"
 };
 
 fetch(url, {
@@ -1283,10 +1331,10 @@ fetch(url, {
  &nbsp;
                 <input type="text" style="display: none"
                name="name"                data-endpoint="POSTapi-register"
-               value="dolores"
+               value="qui"
                data-component="body">
     <br>
-<p>Example: <code>dolores</code></p>
+<p>Example: <code>qui</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>email</code></b>&nbsp;&nbsp;
@@ -1294,10 +1342,10 @@ fetch(url, {
  &nbsp;
                 <input type="text" style="display: none"
                name="email"                data-endpoint="POSTapi-register"
-               value="tenetur"
+               value="laborum"
                data-component="body">
     <br>
-<p>Example: <code>tenetur</code></p>
+<p>Example: <code>laborum</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>phone</code></b>&nbsp;&nbsp;
@@ -1305,10 +1353,10 @@ fetch(url, {
  &nbsp;
                 <input type="text" style="display: none"
                name="phone"                data-endpoint="POSTapi-register"
-               value="pariatur"
+               value="officiis"
                data-component="body">
     <br>
-<p>Example: <code>pariatur</code></p>
+<p>Example: <code>officiis</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>password</code></b>&nbsp;&nbsp;
@@ -1316,13 +1364,13 @@ fetch(url, {
  &nbsp;
                 <input type="text" style="display: none"
                name="password"                data-endpoint="POSTapi-register"
-               value="est"
+               value="unde"
                data-component="body">
     <br>
 <p>'address' =&gt; 'nullable',
 'image' =&gt; 'nullable',
 'website' =&gt; 'nullable',
-'role' =&gt; 'nullable',. Example: <code>est</code></p>
+'role' =&gt; 'nullable',. Example: <code>unde</code></p>
         </div>
         </form>
 
@@ -1363,7 +1411,7 @@ fetch(url, {
 
 <span id="example-responses-GETapi-profile--id-">
             <blockquote>
-            <p>Example response (401):</p>
+            <p>Example response (200):</p>
         </blockquote>
                 <details class="annotation">
             <summary style="cursor: pointer;">
@@ -1371,11 +1419,27 @@ fetch(url, {
             </summary>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
+x-ratelimit-limit: 60
+x-ratelimit-remaining: 59
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;message&quot;: &quot;Unauthenticated.&quot;
+    &quot;status&quot;: true,
+    &quot;users&quot;: {
+        &quot;id&quot;: 1,
+        &quot;name&quot;: &quot;kelvin&quot;,
+        &quot;email&quot;: &quot;kelvin@gmail.com&quot;,
+        &quot;phone&quot;: &quot;09088733333&quot;,
+        &quot;role&quot;: &quot;Agent&quot;,
+        &quot;address&quot;: null,
+        &quot;website&quot;: null,
+        &quot;image&quot;: &quot;image/9xNFRf6JP1KY2qnUitBzCXPKL3lBUq5UyRVKjjeN.jpg&quot;,
+        &quot;gender&quot;: null,
+        &quot;email_verified_at&quot;: null,
+        &quot;created_at&quot;: &quot;2023-01-19T08:22:31.000000Z&quot;,
+        &quot;updated_at&quot;: &quot;2023-01-19T08:59:25.000000Z&quot;
+    }
 }</code>
  </pre>
     </span>
@@ -1467,12 +1531,12 @@ access-control-allow-origin: *
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
-    "http://localhost/api/editprofile/ipsum" \
+    "http://localhost/api/editprofile/porro" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"name\": \"id\",
-    \"email\": \"laboriosam\",
+    \"name\": \"pariatur\",
+    \"email\": \"qui\",
     \"phone\": \"maxime\"
 }"
 </code></pre></div>
@@ -1480,7 +1544,7 @@ access-control-allow-origin: *
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/editprofile/ipsum"
+    "http://localhost/api/editprofile/porro"
 );
 
 const headers = {
@@ -1489,8 +1553,8 @@ const headers = {
 };
 
 let body = {
-    "name": "id",
-    "email": "laboriosam",
+    "name": "pariatur",
+    "email": "qui",
     "phone": "maxime"
 };
 
@@ -1572,10 +1636,10 @@ fetch(url, {
  &nbsp;
                 <input type="text" style="display: none"
                name="id"                data-endpoint="POSTapi-editprofile--id-"
-               value="ipsum"
+               value="porro"
                data-component="url">
     <br>
-<p>The ID of the editprofile. Example: <code>ipsum</code></p>
+<p>The ID of the editprofile. Example: <code>porro</code></p>
             </div>
                             <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
         <div style=" padding-left: 28px;  clear: unset;">
@@ -1584,10 +1648,10 @@ fetch(url, {
  &nbsp;
                 <input type="text" style="display: none"
                name="name"                data-endpoint="POSTapi-editprofile--id-"
-               value="id"
+               value="pariatur"
                data-component="body">
     <br>
-<p>Example: <code>id</code></p>
+<p>Example: <code>pariatur</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>email</code></b>&nbsp;&nbsp;
@@ -1595,10 +1659,10 @@ fetch(url, {
  &nbsp;
                 <input type="text" style="display: none"
                name="email"                data-endpoint="POSTapi-editprofile--id-"
-               value="laboriosam"
+               value="qui"
                data-component="body">
     <br>
-<p>Example: <code>laboriosam</code></p>
+<p>Example: <code>qui</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>phone</code></b>&nbsp;&nbsp;

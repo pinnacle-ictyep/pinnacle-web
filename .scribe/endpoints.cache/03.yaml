@@ -32,60 +32,13 @@ endpoints:
     fileParameters: []
     responses:
       -
-        status: 401
-        content: '{"message":"Unauthenticated."}'
+        status: 200
+        content: '{"status":true,"roomtypes":[{"id":1,"title":"Deluxx","image":"image\/stRITm8koaJlH2Dv9sXHdiIWOgZL5Sei89ZbUEVT.jpg","price":"20,000-40,000","hotel_id":"1","created_at":"2023-01-19T08:32:22.000000Z","updated_at":"2023-01-19T08:32:22.000000Z"},{"id":2,"title":"Delux","image":"image\/d6OokquiCRFkF1EYKBpJuNZm5OEyvplYsXVxWJ2g.jpg","price":"25,000-50,000","hotel_id":"1","created_at":"2023-01-19T08:33:44.000000Z","updated_at":"2023-01-19T08:33:44.000000Z"}]}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
-          access-control-allow-origin: '*'
-        description: null
-        custom: []
-    responseFields: []
-    auth: []
-    controller: null
-    method: null
-    route: null
-    custom: []
-  -
-    httpMethods:
-      - GET
-    uri: 'api/roomtype/{id}'
-    metadata:
-      groupName: 'Roomtype Management'
-      groupDescription: |-
-
-        Apis to manage the roomtype resource.
-      subgroup: ''
-      subgroupDescription: ''
-      title: ''
-      description: ''
-      authenticated: false
-      custom: []
-    headers:
-      Content-Type: application/json
-      Accept: application/json
-    urlParameters:
-      id:
-        name: id
-        description: 'The ID of the roomtype.'
-        required: true
-        example: 1
-        type: integer
-        custom: []
-    cleanUrlParameters:
-      id: 1
-    queryParameters: []
-    cleanQueryParameters: []
-    bodyParameters: []
-    cleanBodyParameters: []
-    fileParameters: []
-    responses:
-      -
-        status: 401
-        content: '{"message":"Unauthenticated."}'
-        headers:
-          cache-control: 'no-cache, private'
-          content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '56'
           access-control-allow-origin: '*'
         description: null
         custom: []
