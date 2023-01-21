@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\Api\AuthController;
 use App\Http\Controllers\Api\HotelController;
+use App\Http\Controllers\Api\BookingController;
 use App\Http\Controllers\Api\GalleryController;
 use App\Http\Controllers\Api\RoomtypeController;
 
@@ -26,7 +27,7 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 Route::post('/login', [AuthController::class, 'login']);
 Route::post('/register', [AuthController::class, 'register']);
 
-Route::group(['middleware'=> 'auth:sanctum'], function (){
+// Route::group(['middleware'=> 'auth:sanctum'], function (){
 
 Route::get('/profile/{id}', [AuthController::class, 'edit']);
 Route::post('/editprofile/{id}', [AuthController::class, 'update']);
@@ -41,4 +42,8 @@ Route::get('/roomtype', [RoomtypeController::class, 'index']);
 //gallery route
 Route::get('/gallery', [GalleryController::class, 'index']);
 
-});
+
+//booking route
+Route::post('/booking', [BookingController::class, 'store']);
+
+// });
