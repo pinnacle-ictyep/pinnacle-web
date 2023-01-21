@@ -86,7 +86,7 @@
         </div>
         <div class="carousel-item">
           <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg> -->
-          <img class="bd-placeholder-img" src="images/index.jpg" alt="Company Logo" width="100%" height="456px">
+          <img class="bd-placeholder-img" src="images/hotel.jpg" alt="Company Logo" width="100%" height="456px">
           <div class="container">
             <div class="carousel-caption" style="text-align: center;" >
               <h1>Find and book your next stay in Asaba.</h1>
@@ -97,7 +97,7 @@
         </div>
         <div class="carousel-item">
           <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg> -->
-          <img class="bd-placeholder-img" src="images/hotel.jpg" alt="Company Logo" width="100%" height="456px">
+          <img class="bd-placeholder-img" src="images/exquisitehotel.webp" alt="Company Logo" width="100%" height="456px">
           <div class="container">
             <div class="carousel-caption">
               <p>A project by ICT-YEP 2022 Beneficiaries</p>
@@ -237,7 +237,7 @@
         <div class="row p-2">
           <div class="flight col-12 col-lg-4 col-md-6 col-xl-4">
             <div class="box">
-              <img src="images/image (2).jpg" alt="air cargo" width="100%">
+              <img src="images/image (2).jpg" class="img-fluid" alt="air cargo" width="100%">
               <h4>Pinnacle Resorts</h4>
               <p>Okpanam Road, Asaba</p>
             </div>
@@ -246,15 +246,15 @@
   
           <div class="flight col-12 col-lg-4 col-md-6 col-xl-4">
             <div class="box">
-              <img src="images/image (1).jpg" alt="air cargo" width="100%">
-              <h4>Kelvino Hotel & Suits</h4>
+              <img src="images/image (1).jpg" class="img-fluid" alt="air cargo" width="100%">
+              <h4>Kelvino Hotel & Suites</h4>
               <p>Nnebisi Road, Asaba</p>
             </div>
           </div>
   
           <div class="flight col-12 col-lg-4 col-md-6 col-xl-4">
             <div class="box">
-              <img src="images/image (3).jpg" alt="Road Frieght Image" width="100%">
+              <img src="images/image (3).jpg" class="img-fluid" alt="Road Frieght Image" width="100%">
               <h4>NikkiHandsome Villa</h4>
               <p>Okpanam Road, Asaba </p>
             </div>
@@ -264,7 +264,7 @@
         <div class="row"> -->
           <div class="flight col-12 col-lg-4 col-md-6 col-xl-4">
             <div class="box">
-              <img src="images/image (4).jpg" alt="air cargo" width="100%">
+              <img src="images/image (4).jpg" class="img-fluid" alt="air cargo" width="100%">
               <h4>Amaka Paradise Hotel</h4>
               <p>Okpanam Road, Asaba</p>
             </div>
@@ -273,7 +273,7 @@
   
           <div class="flight col-12 col-lg-4 col-md-6 col-xl-4">
             <div class="box">
-              <img src="images/image (5).jpg" alt="air cargo" width="100%">
+              <img src="images/image (5).jpg" class="img-fluid" alt="air cargo" width="100%">
               <h4>Merridien Holiday Resorts</h4>
               <p>Infant Jesus, Asaba</p>
             </div>
@@ -281,8 +281,8 @@
   
           <div class="flight col-12 col-lg-4 col-md-6 col-xl-4">
             <div class="box">
-              <img src="images/image (6).jpg" alt="Road Frieght Image" width="100%">
-              <h4>Rex Hotel & Suits</h4>
+              <img src="images/image (6).jpg" class="img-fluid" alt="Road Frieght Image" width="100%">
+              <h4>Rex Hotel & Suites</h4>
               <p>Infant Jesus, Asaba</p>
             </div>
           </div>     
