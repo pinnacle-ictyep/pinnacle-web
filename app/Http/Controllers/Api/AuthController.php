@@ -9,6 +9,12 @@ use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Hash;
 use Illuminate\Support\Facades\Validator;
 
+/**
+ * @group User Management
+ * 
+ * Apis to manage the user resource.
+ */
+
 class AuthController extends Controller
 {
     public function login(Request $request)
@@ -32,7 +38,7 @@ class AuthController extends Controller
         if (!Auth::attempt($request->only(['email', 'password']))) {
             return response()->json([
                 'status' => false,
-                'message' => 'Email and password does not match wih our record.'
+                'message' => 'Email and password does not match with our record.'
             ], 401);
         }
 
@@ -97,7 +103,7 @@ class AuthController extends Controller
     }
 
 
-    public function profile(User $user, $id)
+    public function edit(User $user, $id)
     {
         $user = User::findOrFail($id);
 
@@ -115,7 +121,7 @@ class AuthController extends Controller
     }
 
 
-    public function updateprofile(Request $request)
+    public function update(Request $request)
     {
         $input = $request->all();
         $user = User::findOrFail(auth()->user()->id);

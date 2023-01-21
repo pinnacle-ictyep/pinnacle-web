@@ -47,13 +47,12 @@
     <img src="images/Stay.Inn Logo.png" alt="logo"/>
     <div class="menuToggle" onclick="toggleMenu();"></div>
     <ul class="navigation">
-        <li><a href="#home.html" onclick="toggleMenu();">Home</a></li>
+        <li><a href="{{route('home')}}" onclick="toggleMenu();">Home</a></li>
         <li><a href="#hotels" onclick="toggleMenu();">Hotels</a></li>
         <li><a href="#explore"onclick="toggleMenu();">City</a></li>
         <li><a href="{{route('register')}}"onclick="toggleMenu();">List Your Hotel</a></li>
         <li><a href="#download"onclick="toggleMenu();">Download</a></li>
         <li><a href="#contact"onclick="toggleMenu();">Contact</a></li>
-
     </ul>
 
 
