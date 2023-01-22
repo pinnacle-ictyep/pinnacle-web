@@ -40,7 +40,7 @@
                         @foreach ($gallerys as $gallery)
                             <tr>
                             <td>{{$gallery->id}}</td>
-                            <td>{{$gallery->hotel_id}}</td>
+                            {{-- <td>{{$gallery->hotel_id}}</td> --}}
                             <td>
                                 <img src="{{asset('storage/'.$gallery->img_scr)}}" class="img-fluid" width="100px"> 
                              </td>
