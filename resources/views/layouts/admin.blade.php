@@ -32,10 +32,9 @@
 
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
-                <div class="sidebar-brand-icon rotate-n-15">
-                    <div><img src="{{asset('')}}" alt=""></div>
+                <div class="sidebar-brand-icon">
+                    <div>StayInn</div>
                 </div>
-                <div class="sidebar-brand-text mx-3"><img src="images/Stay.Inn Logo.png" alt="Stayinn"></div>
             </a>
 
             <!-- Divider -->

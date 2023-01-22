@@ -217,8 +217,8 @@
 
       <div class="row">
         <div class="explore" id="hotels">
-          <h3>Today's Hotel Deals </h3>
-          <p>A selection of the best hotel deals available today</p>
+          <h3>Today  </h3>
+          <p>A selection of the best hotels available today</p>
         </div>
       </div>
       
@@ -288,12 +288,12 @@
           </div>     
         </div>
 
-      <div class="row">
+      {{-- <div class="row">
         <div class="downloadapp">
           <button type="button" class="btnsign btn-primary btn btn-lg me-2">Others</button>
         </div>
       </div>
-      
+       --}}
 
 
     </div>
