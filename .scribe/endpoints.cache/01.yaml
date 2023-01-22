@@ -32,19 +32,19 @@ endpoints:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: shanon81@example.net
+        example: lhackett@example.net
         type: string
         custom: []
       password:
         name: password
         description: ''
         required: true
-        example: excepturi
+        example: nulla
         type: string
         custom: []
     cleanBodyParameters:
-      email: shanon81@example.net
-      password: excepturi
+      email: lhackett@example.net
+      password: nulla
     fileParameters: []
     responses: []
     responseFields: []
@@ -80,35 +80,35 @@ endpoints:
         name: name
         description: ''
         required: true
-        example: quod
+        example: dicta
         type: string
         custom: []
       email:
         name: email
         description: ''
         required: true
-        example: unde
+        example: repellendus
         type: string
         custom: []
       phone:
         name: phone
         description: ''
         required: true
-        example: quo
+        example: dolor
         type: string
         custom: []
       password:
         name: password
         description: ''
         required: true
-        example: in
+        example: ea
         type: string
         custom: []
     cleanBodyParameters:
-      name: quod
-      email: unde
-      phone: quo
-      password: in
+      name: dicta
+      email: repellendus
+      phone: dolor
+      password: ea
     fileParameters: []
     responses: []
     responseFields: []
@@ -189,11 +189,11 @@ endpoints:
         name: id
         description: 'The ID of the editprofile.'
         required: true
-        example: unde
+        example: error
         type: string
         custom: []
     cleanUrlParameters:
-      id: unde
+      id: error
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters:
@@ -201,21 +201,21 @@ endpoints:
         name: name
         description: ''
         required: true
-        example: maxime
+        example: possimus
         type: string
         custom: []
       email:
         name: email
         description: ''
         required: true
-        example: facilis
+        example: eius
         type: string
         custom: []
       phone:
         name: phone
         description: ''
         required: true
-        example: placeat
+        example: sunt
         type: string
         custom: []
       address:
@@ -247,9 +247,9 @@ endpoints:
         type: string
         custom: []
     cleanBodyParameters:
-      name: maxime
-      email: facilis
-      phone: placeat
+      name: possimus
+      email: eius
+      phone: sunt
     fileParameters: []
     responses: []
     responseFields: []

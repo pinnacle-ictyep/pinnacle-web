@@ -32,21 +32,21 @@ endpoints:
         name: hotel_name
         description: ''
         required: true
-        example: dolores
+        example: incidunt
         type: string
         custom: []
       hotel_location:
         name: hotel_location
         description: ''
         required: true
-        example: commodi
+        example: sint
         type: string
         custom: []
       roomtype:
         name: roomtype
         description: ''
         required: true
-        example: illum
+        example: libero
         type: string
         custom: []
       hotel_id:
@@ -67,42 +67,42 @@ endpoints:
         name: total
         description: ''
         required: true
-        example: magni
+        example: ipsa
         type: string
         custom: []
       check_in:
         name: check_in
         description: ''
         required: true
-        example: velit
+        example: sit
         type: string
         custom: []
       check_out:
         name: check_out
         description: ''
         required: true
-        example: consectetur
+        example: quo
         type: string
         custom: []
       name:
         name: name
         description: ''
         required: true
-        example: dolorem
+        example: nihil
         type: string
         custom: []
       phone:
         name: phone
         description: ''
         required: true
-        example: aut
+        example: rerum
         type: string
         custom: []
       email:
         name: email
         description: ''
         required: true
-        example: et
+        example: fugit
         type: string
         custom: []
       comment:
@@ -113,15 +113,15 @@ endpoints:
         type: string
         custom: []
     cleanBodyParameters:
-      hotel_name: dolores
-      hotel_location: commodi
-      roomtype: illum
-      total: magni
-      check_in: velit
-      check_out: consectetur
-      name: dolorem
-      phone: aut
-      email: et
+      hotel_name: incidunt
+      hotel_location: sint
+      roomtype: libero
+      total: ipsa
+      check_in: sit
+      check_out: quo
+      name: nihil
+      phone: rerum
+      email: fugit
     fileParameters: []
     responses: []
     responseFields: []

@@ -186,15 +186,15 @@ You can switch the language used with the tabs at the top right (or from the nav
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"hotel_name\": \"dolores\",
-    \"hotel_location\": \"commodi\",
-    \"roomtype\": \"illum\",
-    \"total\": \"magni\",
-    \"check_in\": \"velit\",
-    \"check_out\": \"consectetur\",
-    \"name\": \"dolorem\",
-    \"phone\": \"aut\",
-    \"email\": \"et\"
+    \"hotel_name\": \"incidunt\",
+    \"hotel_location\": \"sint\",
+    \"roomtype\": \"libero\",
+    \"total\": \"ipsa\",
+    \"check_in\": \"sit\",
+    \"check_out\": \"quo\",
+    \"name\": \"nihil\",
+    \"phone\": \"rerum\",
+    \"email\": \"fugit\"
 }"
 </code></pre></div>
 
@@ -210,15 +210,15 @@ const headers = {
 };
 
 let body = {
-    "hotel_name": "dolores",
-    "hotel_location": "commodi",
-    "roomtype": "illum",
-    "total": "magni",
-    "check_in": "velit",
-    "check_out": "consectetur",
-    "name": "dolorem",
-    "phone": "aut",
-    "email": "et"
+    "hotel_name": "incidunt",
+    "hotel_location": "sint",
+    "roomtype": "libero",
+    "total": "ipsa",
+    "check_in": "sit",
+    "check_out": "quo",
+    "name": "nihil",
+    "phone": "rerum",
+    "email": "fugit"
 };
 
 fetch(url, {
@@ -299,10 +299,10 @@ fetch(url, {
  &nbsp;
                 <input type="text" style="display: none"
                name="hotel_name"                data-endpoint="POSTapi-booking"
-               value="dolores"
+               value="incidunt"
                data-component="body">
     <br>
-<p>Example: <code>dolores</code></p>
+<p>Example: <code>incidunt</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>hotel_location</code></b>&nbsp;&nbsp;
@@ -310,10 +310,10 @@ fetch(url, {
  &nbsp;
                 <input type="text" style="display: none"
                name="hotel_location"                data-endpoint="POSTapi-booking"
-               value="commodi"
+               value="sint"
                data-component="body">
     <br>
-<p>Example: <code>commodi</code></p>
+<p>Example: <code>sint</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>roomtype</code></b>&nbsp;&nbsp;
@@ -321,10 +321,10 @@ fetch(url, {
  &nbsp;
                 <input type="text" style="display: none"
                name="roomtype"                data-endpoint="POSTapi-booking"
-               value="illum"
+               value="libero"
                data-component="body">
     <br>
-<p>Example: <code>illum</code></p>
+<p>Example: <code>libero</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>hotel_id</code></b>&nbsp;&nbsp;
@@ -354,10 +354,10 @@ fetch(url, {
  &nbsp;
                 <input type="text" style="display: none"
                name="total"                data-endpoint="POSTapi-booking"
-               value="magni"
+               value="ipsa"
                data-component="body">
     <br>
-<p>Example: <code>magni</code></p>
+<p>Example: <code>ipsa</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>check_in</code></b>&nbsp;&nbsp;
@@ -365,10 +365,10 @@ fetch(url, {
  &nbsp;
                 <input type="text" style="display: none"
                name="check_in"                data-endpoint="POSTapi-booking"
-               value="velit"
+               value="sit"
                data-component="body">
     <br>
-<p>Example: <code>velit</code></p>
+<p>Example: <code>sit</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>check_out</code></b>&nbsp;&nbsp;
@@ -376,10 +376,10 @@ fetch(url, {
  &nbsp;
                 <input type="text" style="display: none"
                name="check_out"                data-endpoint="POSTapi-booking"
-               value="consectetur"
+               value="quo"
                data-component="body">
     <br>
-<p>Example: <code>consectetur</code></p>
+<p>Example: <code>quo</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>name</code></b>&nbsp;&nbsp;
@@ -387,10 +387,10 @@ fetch(url, {
  &nbsp;
                 <input type="text" style="display: none"
                name="name"                data-endpoint="POSTapi-booking"
-               value="dolorem"
+               value="nihil"
                data-component="body">
     <br>
-<p>Example: <code>dolorem</code></p>
+<p>Example: <code>nihil</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>phone</code></b>&nbsp;&nbsp;
@@ -398,10 +398,10 @@ fetch(url, {
  &nbsp;
                 <input type="text" style="display: none"
                name="phone"                data-endpoint="POSTapi-booking"
-               value="aut"
+               value="rerum"
                data-component="body">
     <br>
-<p>Example: <code>aut</code></p>
+<p>Example: <code>rerum</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>email</code></b>&nbsp;&nbsp;
@@ -409,10 +409,10 @@ fetch(url, {
  &nbsp;
                 <input type="text" style="display: none"
                name="email"                data-endpoint="POSTapi-booking"
-               value="et"
+               value="fugit"
                data-component="body">
     <br>
-<p>Example: <code>et</code></p>
+<p>Example: <code>fugit</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>comment</code></b>&nbsp;&nbsp;
@@ -800,14 +800,14 @@ access-control-allow-origin: *
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request GET \
-    --get "http://localhost/api/hotel/2" \
+    --get "http://localhost/api/hotel/1" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json"</code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/hotel/2"
+    "http://localhost/api/hotel/1"
 );
 
 const headers = {
@@ -908,10 +908,10 @@ access-control-allow-origin: *
  &nbsp;
                 <input type="number" style="display: none"
                name="id"                data-endpoint="GETapi-hotel--id-"
-               value="2"
+               value="1"
                data-component="url">
     <br>
-<p>The ID of the hotel. Example: <code>2</code></p>
+<p>The ID of the hotel. Example: <code>1</code></p>
             </div>
                     </form>
 
@@ -1056,8 +1056,8 @@ access-control-allow-origin: *
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"email\": \"shanon81@example.net\",
-    \"password\": \"excepturi\"
+    \"email\": \"lhackett@example.net\",
+    \"password\": \"nulla\"
 }"
 </code></pre></div>
 
@@ -1073,8 +1073,8 @@ const headers = {
 };
 
 let body = {
-    "email": "shanon81@example.net",
-    "password": "excepturi"
+    "email": "lhackett@example.net",
+    "password": "nulla"
 };
 
 fetch(url, {
@@ -1155,10 +1155,10 @@ fetch(url, {
  &nbsp;
                 <input type="text" style="display: none"
                name="email"                data-endpoint="POSTapi-login"
-               value="shanon81@example.net"
+               value="lhackett@example.net"
                data-component="body">
     <br>
-<p>Must be a valid email address. Example: <code>shanon81@example.net</code></p>
+<p>Must be a valid email address. Example: <code>lhackett@example.net</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>password</code></b>&nbsp;&nbsp;
@@ -1166,10 +1166,10 @@ fetch(url, {
  &nbsp;
                 <input type="text" style="display: none"
                name="password"                data-endpoint="POSTapi-login"
-               value="excepturi"
+               value="nulla"
                data-component="body">
     <br>
-<p>Example: <code>excepturi</code></p>
+<p>Example: <code>nulla</code></p>
         </div>
         </form>
 
@@ -1190,10 +1190,10 @@ fetch(url, {
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"name\": \"quod\",
-    \"email\": \"unde\",
-    \"phone\": \"quo\",
-    \"password\": \"in\"
+    \"name\": \"dicta\",
+    \"email\": \"repellendus\",
+    \"phone\": \"dolor\",
+    \"password\": \"ea\"
 }"
 </code></pre></div>
 
@@ -1209,10 +1209,10 @@ const headers = {
 };
 
 let body = {
-    "name": "quod",
-    "email": "unde",
-    "phone": "quo",
-    "password": "in"
+    "name": "dicta",
+    "email": "repellendus",
+    "phone": "dolor",
+    "password": "ea"
 };
 
 fetch(url, {
@@ -1293,10 +1293,10 @@ fetch(url, {
  &nbsp;
                 <input type="text" style="display: none"
                name="name"                data-endpoint="POSTapi-register"
-               value="quod"
+               value="dicta"
                data-component="body">
     <br>
-<p>Example: <code>quod</code></p>
+<p>Example: <code>dicta</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>email</code></b>&nbsp;&nbsp;
@@ -1304,10 +1304,10 @@ fetch(url, {
  &nbsp;
                 <input type="text" style="display: none"
                name="email"                data-endpoint="POSTapi-register"
-               value="unde"
+               value="repellendus"
                data-component="body">
     <br>
-<p>Example: <code>unde</code></p>
+<p>Example: <code>repellendus</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>phone</code></b>&nbsp;&nbsp;
@@ -1315,10 +1315,10 @@ fetch(url, {
  &nbsp;
                 <input type="text" style="display: none"
                name="phone"                data-endpoint="POSTapi-register"
-               value="quo"
+               value="dolor"
                data-component="body">
     <br>
-<p>Example: <code>quo</code></p>
+<p>Example: <code>dolor</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>password</code></b>&nbsp;&nbsp;
@@ -1326,10 +1326,10 @@ fetch(url, {
  &nbsp;
                 <input type="text" style="display: none"
                name="password"                data-endpoint="POSTapi-register"
-               value="in"
+               value="ea"
                data-component="body">
     <br>
-<p>Example: <code>in</code></p>
+<p>Example: <code>ea</code></p>
         </div>
         </form>
 
@@ -1474,20 +1474,20 @@ access-control-allow-origin: *
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
-    "http://localhost/api/editprofile/unde" \
+    "http://localhost/api/editprofile/error" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"name\": \"maxime\",
-    \"email\": \"facilis\",
-    \"phone\": \"placeat\"
+    \"name\": \"possimus\",
+    \"email\": \"eius\",
+    \"phone\": \"sunt\"
 }"
 </code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/editprofile/unde"
+    "http://localhost/api/editprofile/error"
 );
 
 const headers = {
@@ -1496,9 +1496,9 @@ const headers = {
 };
 
 let body = {
-    "name": "maxime",
-    "email": "facilis",
-    "phone": "placeat"
+    "name": "possimus",
+    "email": "eius",
+    "phone": "sunt"
 };
 
 fetch(url, {
@@ -1579,10 +1579,10 @@ fetch(url, {
  &nbsp;
                 <input type="text" style="display: none"
                name="id"                data-endpoint="POSTapi-editprofile--id-"
-               value="unde"
+               value="error"
                data-component="url">
     <br>
-<p>The ID of the editprofile. Example: <code>unde</code></p>
+<p>The ID of the editprofile. Example: <code>error</code></p>
             </div>
                             <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
         <div style=" padding-left: 28px;  clear: unset;">
@@ -1591,10 +1591,10 @@ fetch(url, {
  &nbsp;
                 <input type="text" style="display: none"
                name="name"                data-endpoint="POSTapi-editprofile--id-"
-               value="maxime"
+               value="possimus"
                data-component="body">
     <br>
-<p>Example: <code>maxime</code></p>
+<p>Example: <code>possimus</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>email</code></b>&nbsp;&nbsp;
@@ -1602,10 +1602,10 @@ fetch(url, {
  &nbsp;
                 <input type="text" style="display: none"
                name="email"                data-endpoint="POSTapi-editprofile--id-"
-               value="facilis"
+               value="eius"
                data-component="body">
     <br>
-<p>Example: <code>facilis</code></p>
+<p>Example: <code>eius</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>phone</code></b>&nbsp;&nbsp;
@@ -1613,10 +1613,10 @@ fetch(url, {
  &nbsp;
                 <input type="text" style="display: none"
                name="phone"                data-endpoint="POSTapi-editprofile--id-"
-               value="placeat"
+               value="sunt"
                data-component="body">
     <br>
-<p>Example: <code>placeat</code></p>
+<p>Example: <code>sunt</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>address</code></b>&nbsp;&nbsp;
