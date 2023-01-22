@@ -30,21 +30,21 @@ endpoints:
         name: hotel_name
         description: ''
         required: true
-        example: autem
+        example: laborum
         type: string
         custom: []
       hotel_location:
         name: hotel_location
         description: ''
         required: true
-        example: sint
+        example: fugit
         type: string
         custom: []
       roomtype:
         name: roomtype
         description: ''
         required: true
-        example: nostrum
+        example: quis
         type: string
         custom: []
       hotel_id:
@@ -65,42 +65,42 @@ endpoints:
         name: total
         description: ''
         required: true
-        example: voluptatem
+        example: sequi
         type: string
         custom: []
       check_in:
         name: check_in
         description: ''
         required: true
-        example: occaecati
+        example: incidunt
         type: string
         custom: []
       check_out:
         name: check_out
         description: ''
         required: true
-        example: possimus
+        example: praesentium
         type: string
         custom: []
       name:
         name: name
         description: ''
         required: true
-        example: magnam
+        example: assumenda
         type: string
         custom: []
       phone:
         name: phone
         description: ''
         required: true
-        example: magnam
+        example: asperiores
         type: string
         custom: []
       email:
         name: email
         description: ''
         required: true
-        example: est
+        example: earum
         type: string
         custom: []
       comment:
@@ -111,15 +111,15 @@ endpoints:
         type: string
         custom: []
     cleanBodyParameters:
-      hotel_name: autem
-      hotel_location: sint
-      roomtype: nostrum
-      total: voluptatem
-      check_in: occaecati
-      check_out: possimus
-      name: magnam
-      phone: magnam
-      email: est
+      hotel_name: laborum
+      hotel_location: fugit
+      roomtype: quis
+      total: sequi
+      check_in: incidunt
+      check_out: praesentium
+      name: assumenda
+      phone: asperiores
+      email: earum
     fileParameters: []
     responses: []
     responseFields: []

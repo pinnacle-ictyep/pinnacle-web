@@ -30,19 +30,19 @@ endpoints:
         name: email
         description: 'Must be a valid email address.'
         required: true
-        example: asipes@example.net
+        example: maggio.carlee@example.com
         type: string
         custom: []
       password:
         name: password
         description: ''
         required: true
-        example: maiores
+        example: ut
         type: string
         custom: []
     cleanBodyParameters:
-      email: asipes@example.net
-      password: maiores
+      email: maggio.carlee@example.com
+      password: ut
     fileParameters: []
     responses: []
     responseFields: []
@@ -78,35 +78,35 @@ endpoints:
         name: name
         description: ''
         required: true
-        example: culpa
+        example: et
         type: string
         custom: []
       email:
         name: email
         description: ''
         required: true
-        example: quod
+        example: repellendus
         type: string
         custom: []
       phone:
         name: phone
         description: ''
         required: true
-        example: est
+        example: aut
         type: string
         custom: []
       password:
         name: password
         description: ''
         required: true
-        example: aut
+        example: soluta
         type: string
         custom: []
     cleanBodyParameters:
-      name: culpa
-      email: quod
-      phone: est
-      password: aut
+      name: et
+      email: repellendus
+      phone: aut
+      password: soluta
     fileParameters: []
     responses: []
     responseFields: []
@@ -151,7 +151,7 @@ endpoints:
     responses:
       -
         status: 200
-        content: '{"status":true,"users":{"id":1,"name":"kelvin","email":"kelvin@gmail.com","phone":"09054345678","role":"Agent","address":null,"website":null,"image":"please upload image","gender":null,"email_verified_at":null,"created_at":"2023-01-18T21:06:36.000000Z","updated_at":"2023-01-18T21:06:36.000000Z"}}'
+        content: '{"status":true,"users":{"id":1,"name":"kelvin","email":"kelvin@gmail.com","phone":"09054345678","role":"Admin","address":null,"website":null,"image":"please upload image","gender":null,"email_verified_at":null,"created_at":"2023-01-18T21:06:36.000000Z","updated_at":"2023-01-18T21:06:36.000000Z"}}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
@@ -189,11 +189,11 @@ endpoints:
         name: id
         description: 'The ID of the editprofile.'
         required: true
-        example: quibusdam
+        example: eum
         type: string
         custom: []
     cleanUrlParameters:
-      id: quibusdam
+      id: eum
     queryParameters: []
     cleanQueryParameters: []
     bodyParameters:
@@ -201,21 +201,21 @@ endpoints:
         name: name
         description: ''
         required: true
-        example: et
+        example: eos
         type: string
         custom: []
       email:
         name: email
         description: ''
         required: true
-        example: suscipit
+        example: tempora
         type: string
         custom: []
       phone:
         name: phone
         description: ''
         required: true
-        example: sunt
+        example: est
         type: string
         custom: []
       address:
@@ -247,9 +247,9 @@ endpoints:
         type: string
         custom: []
     cleanBodyParameters:
-      name: et
-      email: suscipit
-      phone: sunt
+      name: eos
+      email: tempora
+      phone: est
     fileParameters: []
     responses: []
     responseFields: []
