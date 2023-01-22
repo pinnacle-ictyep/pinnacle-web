@@ -5,11 +5,6 @@
     <div class="container-fluid">
         <!-- DataTales Example -->
         <div class="card shadow mb-4">
-            <div class="card-header py-3">
-                <h6 class="m-0 font-weight-bold text-primary">Add hotel <a href="{{ route('hotel.index') }}"
-                        class="float-right btn btn-success btn-sm">View all</a>
-                </h6>
-            </div>
             @if (session()->has('message'))
                 <div class="alert alert-success">
                     {{ session()->get('message') }}
@@ -84,7 +79,7 @@
                             </tr>
 
                             <tr>
-                                <th>amenities<span class="text-danger">*</span></th>
+                                <th>Amenities<span class="text-danger">*</span></th>
                                 <td><input type="text" class="form-control" name="amenities">
                                     @error('amenities')
                                         <div class="text-danger">{{ $message }}</div>
@@ -93,7 +88,7 @@
                             </tr>
 
                             <tr>
-                                <th>description<span class="text-danger">*</span></th>
+                                <th>Description<span class="text-danger">*</span></th>
                                 <td><input type="text" class="form-control" name="description">
                                     @error('description')
                                         <div class="text-danger">{{ $message }}</div>
@@ -102,7 +97,7 @@
                             </tr>
 
                             <tr>
-                                <th>price<span class="text-danger">*</span></th>
+                                <th>Price<span class="text-danger">*</span></th>
                                 <td><input type="text" class="form-control" name="price">
                                     @error('price')
                                         <div class="text-danger">{{ $message }}</div>
@@ -111,7 +106,7 @@
                             </tr>
 
                             <tr>
-                                <th>Photo</th>
+                                <th>Photo<span class="text-danger">*</span></th>
                                 <td><input type="file" class="form-control" name="image">
                                     @error('image')
                                         <div class="text-danger">{{ $message }}</div>
@@ -120,7 +115,7 @@
                             </tr>
 
                             <tr>
-                                <th>Address</th>
+                                <th>Address<span class="text-danger">*</span></th>
                                 <td>
                                     <textarea name="address" class="form-control"></textarea> @error('address')
                                         <div class="text-danger">{{ $message }}</div>
@@ -129,7 +124,7 @@
                             </tr>
 
                             <tr>
-                                <th>Gallery</th>
+                                <th>Gallery<span class="text-danger">*</span></th>
                                 <td><input type="file" class="form-control" multiple name="images[]">
                                     <small>Please provide at least 4 beautiful images of different parts of your
                                         hotel</small>
