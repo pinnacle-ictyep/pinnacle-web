@@ -78,7 +78,7 @@ class AgentController extends Controller
         try {
             $request->validate([
             'name' => 'required',
-            'email' => 'nullable|unique:users,email',
+            'email' => 'nullable|unique:hotels,email',
             'phone' => 'required',
             'location' => 'required',
             'address' => 'required',
@@ -121,8 +121,12 @@ class AgentController extends Controller
             $imgData->save();
         }
         return redirect()->route('dashboard')->with('messagee', 'Hotel Registration Successful');
+
         } catch (\Throwable $th) {
-            return redirect()->back()->with('status', 'You already registered your hotel, please create a new account to register a new hotel');
+           return response()->json([
+            'error' => $th->getMessage()
+           ]);
+            // return redirect()->back()->with('status', 'You already registered your hotel, please create a new account to register a new hotel');
         }
         
     }
