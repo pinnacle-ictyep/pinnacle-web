@@ -141,7 +141,7 @@
                 </a>
                 <div id="gallery" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                        {{-- <a class="collapse-item" href="{{ route('createGL')}}">Create</a> --}}
+                        <a class="collapse-item" href="{{ route('createGL')}}">Create</a>
                         <a class="collapse-item" href="{{ route('showGL') }}">View</a>
                     </div>
                 </div>
@@ -227,7 +227,7 @@
                     <div id="galleryMaster" class="collapse" aria-labelledby="headingTwo"
                         data-parent="#accordionSidebar">
                         <div class="bg-white py-2 collapse-inner rounded">
-                            <a class="collapse-item" href="{{ route('gallery.create') }}">Add new</a>
+                            {{-- <a class="collapse-item" href="{{ route('gallery.create') }}">Add new</a> --}}
                             <a class="collapse-item" href="{{ route('gallery.index') }}">View all</a>
                         </div>
                     </div>
