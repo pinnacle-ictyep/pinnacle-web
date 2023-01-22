@@ -74,7 +74,7 @@
       <div class="carousel-inner">
         <div class="carousel-item active">
           <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg> -->
-          <img class="bd-placeholder-img" src="images/hotel.jpg" alt="Company Logo" width="100%" height="456px">
+          <img class="bd-placeholder-img" src="images/exquisitehotel.webp" alt="Company Logo" width="100%" height="456px">
   
           <div class="container">
             <div class="carousel-caption">
