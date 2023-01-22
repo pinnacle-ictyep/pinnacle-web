@@ -158,9 +158,9 @@
                 <div id="book" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
                             <a class="collapse-item"
-                                {{-- href="{{ route('hotel.showw', Booking::findOrFail(Auth::user()->id)) }}">View</a> --}}
+                                href="{{ route('hotel.showw', Booking::findOrFail(Auth::user()->id)) }}">View</a>
                             <a class="collapse-item"
-                                {{-- href="{{ route('hotel.editt', Booking::findOrFail(Auth::user()->id)) }}">edit</a> --}}
+                                href="{{ route('hotel.editt', Booking::findOrFail(Auth::user()->id)) }}">edit</a>
                     </div>
                 </div>
             </li>

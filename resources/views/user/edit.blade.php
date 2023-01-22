@@ -83,6 +83,20 @@
                             </tr>
 
                             <tr>
+                                <th>Gender</th>
+                                <td>
+                                    <select name="gender" id="gender">
+                                        <option value=""></option>
+                                        <option value="male">Male</option>
+                                        <option value="female">Female</option>
+                                    </select> 
+                                    @error('gender')
+                                        <div class="text-danger">{{ $message }}</div>
+                                    @enderror
+                                </td>
+                            </tr>
+
+                            <tr>
                                 <th>change user type</th>
                                 <td><select name="role" class="form-control"><option value="{{$user->role}}">change User_type</option><option value="Customer">Customer</option><option value="Agent">Agent</option></select>
                                     @error('role')

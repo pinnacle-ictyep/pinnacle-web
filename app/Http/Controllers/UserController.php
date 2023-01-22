@@ -112,6 +112,7 @@ class UserController extends Controller
             'phone' => 'required',
             'role' => 'nullable',
             'address' => 'nullable',
+            'gender' => 'nullable',
             'website' => 'nullable',
             'image' => 'nullable',
         ]);
@@ -126,6 +127,7 @@ class UserController extends Controller
             'name' => $request->name,
             'email' => $request->email,
             'phone' => $request->phone,
+            'gender' => $request->gender,
             'role' => $request->role,
             'image' => $img_dir,
             'website' => $request->website,
