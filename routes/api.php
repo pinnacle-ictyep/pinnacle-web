@@ -45,5 +45,5 @@ Route::get('/gallery', [GalleryController::class, 'index']);
 // });
 //booking route
 Route::post('/booking', [BookingController::class, 'store']);
-Route::post('/booking/{id}', [BookingController::class, 'show']);
+Route::get('/booking/{id}', [BookingController::class, 'show']);
 
