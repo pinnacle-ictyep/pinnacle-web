@@ -45,6 +45,11 @@
                                 </td>
                             </tr>
                             <tr>
+                                <th>Gender</th>
+                                <td>{{$user->gender}}
+                                </td>
+                            </tr>
+                            <tr>
                                 <th>Address</th>
                                 <td>{{$user->address}}
                                 </td>
