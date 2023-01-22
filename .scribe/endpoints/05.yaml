@@ -30,21 +30,21 @@ endpoints:
         name: hotel_name
         description: ''
         required: true
-        example: autem
+        example: dolores
         type: string
         custom: []
       hotel_location:
         name: hotel_location
         description: ''
         required: true
-        example: sint
+        example: commodi
         type: string
         custom: []
       roomtype:
         name: roomtype
         description: ''
         required: true
-        example: nostrum
+        example: illum
         type: string
         custom: []
       hotel_id:
@@ -65,42 +65,42 @@ endpoints:
         name: total
         description: ''
         required: true
-        example: voluptatem
+        example: magni
         type: string
         custom: []
       check_in:
         name: check_in
         description: ''
         required: true
-        example: occaecati
+        example: velit
         type: string
         custom: []
       check_out:
         name: check_out
         description: ''
         required: true
-        example: possimus
+        example: consectetur
         type: string
         custom: []
       name:
         name: name
         description: ''
         required: true
-        example: magnam
+        example: dolorem
         type: string
         custom: []
       phone:
         name: phone
         description: ''
         required: true
-        example: magnam
+        example: aut
         type: string
         custom: []
       email:
         name: email
         description: ''
         required: true
-        example: est
+        example: et
         type: string
         custom: []
       comment:
@@ -111,15 +111,15 @@ endpoints:
         type: string
         custom: []
     cleanBodyParameters:
-      hotel_name: autem
-      hotel_location: sint
-      roomtype: nostrum
-      total: voluptatem
-      check_in: occaecati
-      check_out: possimus
-      name: magnam
-      phone: magnam
-      email: est
+      hotel_name: dolores
+      hotel_location: commodi
+      roomtype: illum
+      total: magni
+      check_in: velit
+      check_out: consectetur
+      name: dolorem
+      phone: aut
+      email: et
     fileParameters: []
     responses: []
     responseFields: []

@@ -147,7 +147,7 @@
     </ul>
 
     <ul class="toc-footer" id="last-updated">
-        <li>Last updated: January 21, 2023</li>
+        <li>Last updated: January 22, 2023</li>
     </ul>
 </div>
 
@@ -186,15 +186,15 @@ You can switch the language used with the tabs at the top right (or from the nav
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"hotel_name\": \"autem\",
-    \"hotel_location\": \"sint\",
-    \"roomtype\": \"nostrum\",
-    \"total\": \"voluptatem\",
-    \"check_in\": \"occaecati\",
-    \"check_out\": \"possimus\",
-    \"name\": \"magnam\",
-    \"phone\": \"magnam\",
-    \"email\": \"est\"
+    \"hotel_name\": \"dolores\",
+    \"hotel_location\": \"commodi\",
+    \"roomtype\": \"illum\",
+    \"total\": \"magni\",
+    \"check_in\": \"velit\",
+    \"check_out\": \"consectetur\",
+    \"name\": \"dolorem\",
+    \"phone\": \"aut\",
+    \"email\": \"et\"
 }"
 </code></pre></div>
 
@@ -210,15 +210,15 @@ const headers = {
 };
 
 let body = {
-    "hotel_name": "autem",
-    "hotel_location": "sint",
-    "roomtype": "nostrum",
-    "total": "voluptatem",
-    "check_in": "occaecati",
-    "check_out": "possimus",
-    "name": "magnam",
-    "phone": "magnam",
-    "email": "est"
+    "hotel_name": "dolores",
+    "hotel_location": "commodi",
+    "roomtype": "illum",
+    "total": "magni",
+    "check_in": "velit",
+    "check_out": "consectetur",
+    "name": "dolorem",
+    "phone": "aut",
+    "email": "et"
 };
 
 fetch(url, {
@@ -299,10 +299,10 @@ fetch(url, {
  &nbsp;
                 <input type="text" style="display: none"
                name="hotel_name"                data-endpoint="POSTapi-booking"
-               value="autem"
+               value="dolores"
                data-component="body">
     <br>
-<p>Example: <code>autem</code></p>
+<p>Example: <code>dolores</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>hotel_location</code></b>&nbsp;&nbsp;
@@ -310,10 +310,10 @@ fetch(url, {
  &nbsp;
                 <input type="text" style="display: none"
                name="hotel_location"                data-endpoint="POSTapi-booking"
-               value="sint"
+               value="commodi"
                data-component="body">
     <br>
-<p>Example: <code>sint</code></p>
+<p>Example: <code>commodi</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>roomtype</code></b>&nbsp;&nbsp;
@@ -321,10 +321,10 @@ fetch(url, {
  &nbsp;
                 <input type="text" style="display: none"
                name="roomtype"                data-endpoint="POSTapi-booking"
-               value="nostrum"
+               value="illum"
                data-component="body">
     <br>
-<p>Example: <code>nostrum</code></p>
+<p>Example: <code>illum</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>hotel_id</code></b>&nbsp;&nbsp;
@@ -354,10 +354,10 @@ fetch(url, {
  &nbsp;
                 <input type="text" style="display: none"
                name="total"                data-endpoint="POSTapi-booking"
-               value="voluptatem"
+               value="magni"
                data-component="body">
     <br>
-<p>Example: <code>voluptatem</code></p>
+<p>Example: <code>magni</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>check_in</code></b>&nbsp;&nbsp;
@@ -365,10 +365,10 @@ fetch(url, {
  &nbsp;
                 <input type="text" style="display: none"
                name="check_in"                data-endpoint="POSTapi-booking"
-               value="occaecati"
+               value="velit"
                data-component="body">
     <br>
-<p>Example: <code>occaecati</code></p>
+<p>Example: <code>velit</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>check_out</code></b>&nbsp;&nbsp;
@@ -376,10 +376,10 @@ fetch(url, {
  &nbsp;
                 <input type="text" style="display: none"
                name="check_out"                data-endpoint="POSTapi-booking"
-               value="possimus"
+               value="consectetur"
                data-component="body">
     <br>
-<p>Example: <code>possimus</code></p>
+<p>Example: <code>consectetur</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>name</code></b>&nbsp;&nbsp;
@@ -387,10 +387,10 @@ fetch(url, {
  &nbsp;
                 <input type="text" style="display: none"
                name="name"                data-endpoint="POSTapi-booking"
-               value="magnam"
+               value="dolorem"
                data-component="body">
     <br>
-<p>Example: <code>magnam</code></p>
+<p>Example: <code>dolorem</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>phone</code></b>&nbsp;&nbsp;
@@ -398,10 +398,10 @@ fetch(url, {
  &nbsp;
                 <input type="text" style="display: none"
                name="phone"                data-endpoint="POSTapi-booking"
-               value="magnam"
+               value="aut"
                data-component="body">
     <br>
-<p>Example: <code>magnam</code></p>
+<p>Example: <code>aut</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>email</code></b>&nbsp;&nbsp;
@@ -409,10 +409,10 @@ fetch(url, {
  &nbsp;
                 <input type="text" style="display: none"
                name="email"                data-endpoint="POSTapi-booking"
-               value="est"
+               value="et"
                data-component="body">
     <br>
-<p>Example: <code>est</code></p>
+<p>Example: <code>et</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>comment</code></b>&nbsp;&nbsp;
@@ -588,7 +588,7 @@ fetch(url, {
 
 <span id="example-responses-GETapi-gallery">
             <blockquote>
-            <p>Example response (200):</p>
+            <p>Example response (401):</p>
         </blockquote>
                 <details class="annotation">
             <summary style="cursor: pointer;">
@@ -596,79 +596,11 @@ fetch(url, {
             </summary>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
-x-ratelimit-limit: 60
-x-ratelimit-remaining: 55
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;status&quot;: true,
-    &quot;hotels&quot;: [
-        {
-            &quot;id&quot;: 1,
-            &quot;img_scr&quot;: &quot;image/r6un7sAVCrIvGLGtrrlyLPSFMmD7SpoDuWQ6Fd42.jpg&quot;,
-            &quot;img_alt&quot;: &quot;kelvino Hotel&quot;,
-            &quot;hotel_id&quot;: &quot;2&quot;,
-            &quot;created_at&quot;: &quot;2023-01-18T21:08:05.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2023-01-18T21:08:05.000000Z&quot;
-        },
-        {
-            &quot;id&quot;: 2,
-            &quot;img_scr&quot;: &quot;image/t3b8PVvpXaEl9WVoEMSs1yRdoQfDxrmoeYSnixj3.jpg&quot;,
-            &quot;img_alt&quot;: &quot;kelvino Hotel&quot;,
-            &quot;hotel_id&quot;: &quot;2&quot;,
-            &quot;created_at&quot;: &quot;2023-01-18T21:08:05.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2023-01-18T21:08:05.000000Z&quot;
-        },
-        {
-            &quot;id&quot;: 3,
-            &quot;img_scr&quot;: &quot;image/KVrWql22PkPDg3OQNGgWdIE0IJn99UYASXZvS3fU.jpg&quot;,
-            &quot;img_alt&quot;: &quot;praiseHotel&quot;,
-            &quot;hotel_id&quot;: &quot;3&quot;,
-            &quot;created_at&quot;: &quot;2023-01-18T21:16:40.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2023-01-18T21:16:40.000000Z&quot;
-        },
-        {
-            &quot;id&quot;: 4,
-            &quot;img_scr&quot;: &quot;gallery/cV7jrhEFrX4zCtNNGeCT28mjgF67tvUv5ezBhJUJ.jpg&quot;,
-            &quot;img_alt&quot;: &quot;tiger&quot;,
-            &quot;hotel_id&quot;: &quot;3&quot;,
-            &quot;created_at&quot;: &quot;2023-01-18T21:21:16.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2023-01-18T21:21:16.000000Z&quot;
-        },
-        {
-            &quot;id&quot;: 5,
-            &quot;img_scr&quot;: &quot;gallery/EWaXbnvw5B4Xi4Q5hQEyb7wS38qWzcumPO5Mw5Vw.jpg&quot;,
-            &quot;img_alt&quot;: &quot;praiseHotel&quot;,
-            &quot;hotel_id&quot;: &quot;3&quot;,
-            &quot;created_at&quot;: &quot;2023-01-18T21:25:40.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2023-01-18T21:25:40.000000Z&quot;
-        },
-        {
-            &quot;id&quot;: 6,
-            &quot;img_scr&quot;: &quot;image/kqIEwv6Ebi7mxa6EuzatHJHURRUtm3FhJ9NaMWci.jpg&quot;,
-            &quot;img_alt&quot;: &quot;presh hotel&quot;,
-            &quot;hotel_id&quot;: &quot;4&quot;,
-            &quot;created_at&quot;: &quot;2023-01-19T15:02:43.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2023-01-19T15:02:43.000000Z&quot;
-        },
-        {
-            &quot;id&quot;: 7,
-            &quot;img_scr&quot;: &quot;image/1NDu8H4nCq7XxnetoZRJwZQVn28DCI21Vtivz2Ea.jpg&quot;,
-            &quot;img_alt&quot;: &quot;kelvino Hotel&quot;,
-            &quot;hotel_id&quot;: &quot;5&quot;,
-            &quot;created_at&quot;: &quot;2023-01-19T23:07:31.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2023-01-19T23:07:31.000000Z&quot;
-        },
-        {
-            &quot;id&quot;: 8,
-            &quot;img_scr&quot;: &quot;image/0OV46skHNeFmexvxaYDWBrMuXDVi61Pcc1lWDjPp.jpg&quot;,
-            &quot;img_alt&quot;: &quot;kelvino Hotel&quot;,
-            &quot;hotel_id&quot;: &quot;5&quot;,
-            &quot;created_at&quot;: &quot;2023-01-19T23:07:31.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2023-01-19T23:07:31.000000Z&quot;
-        }
-    ]
+    &quot;message&quot;: &quot;Unauthenticated.&quot;
 }</code>
  </pre>
     </span>
@@ -776,7 +708,7 @@ fetch(url, {
 
 <span id="example-responses-GETapi-hotel">
             <blockquote>
-            <p>Example response (200):</p>
+            <p>Example response (401):</p>
         </blockquote>
                 <details class="annotation">
             <summary style="cursor: pointer;">
@@ -784,79 +716,11 @@ fetch(url, {
             </summary>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
-x-ratelimit-limit: 60
-x-ratelimit-remaining: 58
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;status&quot;: true,
-    &quot;hotels&quot;: [
-        {
-            &quot;id&quot;: 2,
-            &quot;name&quot;: &quot;kelvino Hotel&quot;,
-            &quot;email&quot;: &quot;kelvino@gmail.com&quot;,
-            &quot;phone&quot;: &quot;09054345678&quot;,
-            &quot;user_id&quot;: &quot;2&quot;,
-            &quot;image&quot;: &quot;image/bEJXskJAwaojN2tOkavjpg3bHamB3qutfWOEKSRX.jpg&quot;,
-            &quot;address&quot;: &quot;asaba&quot;,
-            &quot;location&quot;: &quot;asaba&quot;,
-            &quot;rules&quot;: &quot;wash hands on entry&quot;,
-            &quot;amenities&quot;: &quot;pool&quot;,
-            &quot;description&quot;: &quot;excellent&quot;,
-            &quot;price&quot;: &quot;20000-40000&quot;,
-            &quot;created_at&quot;: &quot;2023-01-18T21:08:04.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2023-01-18T21:08:04.000000Z&quot;
-        },
-        {
-            &quot;id&quot;: 3,
-            &quot;name&quot;: &quot;praiseHotel&quot;,
-            &quot;email&quot;: &quot;praisehotel@gmail.com&quot;,
-            &quot;phone&quot;: &quot;09054345678&quot;,
-            &quot;user_id&quot;: &quot;3&quot;,
-            &quot;image&quot;: &quot;image/53exnbtah3JdkezTrpUIJFF9cG2JtDmZBZlDU6p0.jpg&quot;,
-            &quot;address&quot;: &quot;asaba&quot;,
-            &quot;location&quot;: &quot;asaba&quot;,
-            &quot;rules&quot;: &quot;wash hands on entry&quot;,
-            &quot;amenities&quot;: &quot;pool&quot;,
-            &quot;description&quot;: &quot;excellent&quot;,
-            &quot;price&quot;: &quot;20000-40000&quot;,
-            &quot;created_at&quot;: &quot;2023-01-18T21:16:40.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2023-01-18T21:16:40.000000Z&quot;
-        },
-        {
-            &quot;id&quot;: 4,
-            &quot;name&quot;: &quot;presh hotel&quot;,
-            &quot;email&quot;: &quot;hotel@gmail.com&quot;,
-            &quot;phone&quot;: &quot;09054345678&quot;,
-            &quot;user_id&quot;: &quot;4&quot;,
-            &quot;image&quot;: &quot;image/H7FCBsCdd6OXLTBREj3s9O0J9DC8UUtxbE4Qgns4.jpg&quot;,
-            &quot;address&quot;: &quot;asaba&quot;,
-            &quot;location&quot;: &quot;asaba&quot;,
-            &quot;rules&quot;: &quot;wash hands on entry&quot;,
-            &quot;amenities&quot;: &quot;pool&quot;,
-            &quot;description&quot;: &quot;excellent&quot;,
-            &quot;price&quot;: &quot;20000-40000&quot;,
-            &quot;created_at&quot;: &quot;2023-01-19T15:02:43.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2023-01-19T15:02:43.000000Z&quot;
-        },
-        {
-            &quot;id&quot;: 5,
-            &quot;name&quot;: &quot;kelvino Hotel&quot;,
-            &quot;email&quot;: &quot;hotdel@gmail.com&quot;,
-            &quot;phone&quot;: &quot;09054345678&quot;,
-            &quot;user_id&quot;: &quot;5&quot;,
-            &quot;image&quot;: &quot;image/RnIAtHv0gRWunuNpEC6mmrsqrSJ5CnMdEFAuzPaN.jpg&quot;,
-            &quot;address&quot;: &quot;asaba&quot;,
-            &quot;location&quot;: &quot;asaba&quot;,
-            &quot;rules&quot;: &quot;wash hands on entry&quot;,
-            &quot;amenities&quot;: &quot;pool&quot;,
-            &quot;description&quot;: &quot;excellent&quot;,
-            &quot;price&quot;: &quot;20000-40000&quot;,
-            &quot;created_at&quot;: &quot;2023-01-19T23:07:31.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2023-01-19T23:07:31.000000Z&quot;
-        }
-    ]
+    &quot;message&quot;: &quot;Unauthenticated.&quot;
 }</code>
  </pre>
     </span>
@@ -960,7 +824,7 @@ fetch(url, {
 
 <span id="example-responses-GETapi-hotel--id-">
             <blockquote>
-            <p>Example response (200):</p>
+            <p>Example response (401):</p>
         </blockquote>
                 <details class="annotation">
             <summary style="cursor: pointer;">
@@ -968,48 +832,11 @@ fetch(url, {
             </summary>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
-x-ratelimit-limit: 60
-x-ratelimit-remaining: 57
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;status&quot;: true,
-    &quot;hotels&quot;: {
-        &quot;id&quot;: 2,
-        &quot;name&quot;: &quot;kelvino Hotel&quot;,
-        &quot;email&quot;: &quot;kelvino@gmail.com&quot;,
-        &quot;phone&quot;: &quot;09054345678&quot;,
-        &quot;user_id&quot;: &quot;2&quot;,
-        &quot;image&quot;: &quot;image/bEJXskJAwaojN2tOkavjpg3bHamB3qutfWOEKSRX.jpg&quot;,
-        &quot;address&quot;: &quot;asaba&quot;,
-        &quot;location&quot;: &quot;asaba&quot;,
-        &quot;rules&quot;: &quot;wash hands on entry&quot;,
-        &quot;amenities&quot;: &quot;pool&quot;,
-        &quot;description&quot;: &quot;excellent&quot;,
-        &quot;price&quot;: &quot;20000-40000&quot;,
-        &quot;created_at&quot;: &quot;2023-01-18T21:08:04.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2023-01-18T21:08:04.000000Z&quot;,
-        &quot;roomtype&quot;: [],
-        &quot;gallery&quot;: [
-            {
-                &quot;id&quot;: 1,
-                &quot;img_scr&quot;: &quot;image/r6un7sAVCrIvGLGtrrlyLPSFMmD7SpoDuWQ6Fd42.jpg&quot;,
-                &quot;img_alt&quot;: &quot;kelvino Hotel&quot;,
-                &quot;hotel_id&quot;: &quot;2&quot;,
-                &quot;created_at&quot;: &quot;2023-01-18T21:08:05.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2023-01-18T21:08:05.000000Z&quot;
-            },
-            {
-                &quot;id&quot;: 2,
-                &quot;img_scr&quot;: &quot;image/t3b8PVvpXaEl9WVoEMSs1yRdoQfDxrmoeYSnixj3.jpg&quot;,
-                &quot;img_alt&quot;: &quot;kelvino Hotel&quot;,
-                &quot;hotel_id&quot;: &quot;2&quot;,
-                &quot;created_at&quot;: &quot;2023-01-18T21:08:05.000000Z&quot;,
-                &quot;updated_at&quot;: &quot;2023-01-18T21:08:05.000000Z&quot;
-            }
-        ]
-    }
+    &quot;message&quot;: &quot;Unauthenticated.&quot;
 }</code>
  </pre>
     </span>
@@ -1129,7 +956,7 @@ fetch(url, {
 
 <span id="example-responses-GETapi-roomtype">
             <blockquote>
-            <p>Example response (200):</p>
+            <p>Example response (401):</p>
         </blockquote>
                 <details class="annotation">
             <summary style="cursor: pointer;">
@@ -1137,33 +964,11 @@ fetch(url, {
             </summary>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
-x-ratelimit-limit: 60
-x-ratelimit-remaining: 56
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;status&quot;: true,
-    &quot;roomtypes&quot;: [
-        {
-            &quot;id&quot;: 1,
-            &quot;title&quot;: &quot;mini&quot;,
-            &quot;image&quot;: &quot;image/NjGwBrIxSg2utOGE9U5A6WlJKCXmvfl04OGuBVN6.jpg&quot;,
-            &quot;price&quot;: &quot;450&quot;,
-            &quot;hotel_id&quot;: &quot;3&quot;,
-            &quot;created_at&quot;: &quot;2023-01-18T21:18:02.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2023-01-18T21:18:02.000000Z&quot;
-        },
-        {
-            &quot;id&quot;: 2,
-            &quot;title&quot;: &quot;mini&quot;,
-            &quot;image&quot;: &quot;image/Pf45y6VEpQV825asdX2rYLpZ9tY7WgfJC8yZNXmP.jpg&quot;,
-            &quot;price&quot;: &quot;20000-40000&quot;,
-            &quot;hotel_id&quot;: &quot;5&quot;,
-            &quot;created_at&quot;: &quot;2023-01-19T23:09:03.000000Z&quot;,
-            &quot;updated_at&quot;: &quot;2023-01-19T23:09:03.000000Z&quot;
-        }
-    ]
+    &quot;message&quot;: &quot;Unauthenticated.&quot;
 }</code>
  </pre>
     </span>
@@ -1251,8 +1056,8 @@ access-control-allow-origin: *
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"email\": \"asipes@example.net\",
-    \"password\": \"maiores\"
+    \"email\": \"shanon81@example.net\",
+    \"password\": \"excepturi\"
 }"
 </code></pre></div>
 
@@ -1268,8 +1073,8 @@ const headers = {
 };
 
 let body = {
-    "email": "asipes@example.net",
-    "password": "maiores"
+    "email": "shanon81@example.net",
+    "password": "excepturi"
 };
 
 fetch(url, {
@@ -1350,10 +1155,10 @@ fetch(url, {
  &nbsp;
                 <input type="text" style="display: none"
                name="email"                data-endpoint="POSTapi-login"
-               value="asipes@example.net"
+               value="shanon81@example.net"
                data-component="body">
     <br>
-<p>Must be a valid email address. Example: <code>asipes@example.net</code></p>
+<p>Must be a valid email address. Example: <code>shanon81@example.net</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>password</code></b>&nbsp;&nbsp;
@@ -1361,10 +1166,10 @@ fetch(url, {
  &nbsp;
                 <input type="text" style="display: none"
                name="password"                data-endpoint="POSTapi-login"
-               value="maiores"
+               value="excepturi"
                data-component="body">
     <br>
-<p>Example: <code>maiores</code></p>
+<p>Example: <code>excepturi</code></p>
         </div>
         </form>
 
@@ -1385,10 +1190,10 @@ fetch(url, {
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"name\": \"culpa\",
-    \"email\": \"quod\",
-    \"phone\": \"est\",
-    \"password\": \"aut\"
+    \"name\": \"quod\",
+    \"email\": \"unde\",
+    \"phone\": \"quo\",
+    \"password\": \"in\"
 }"
 </code></pre></div>
 
@@ -1404,10 +1209,10 @@ const headers = {
 };
 
 let body = {
-    "name": "culpa",
-    "email": "quod",
-    "phone": "est",
-    "password": "aut"
+    "name": "quod",
+    "email": "unde",
+    "phone": "quo",
+    "password": "in"
 };
 
 fetch(url, {
@@ -1488,10 +1293,10 @@ fetch(url, {
  &nbsp;
                 <input type="text" style="display: none"
                name="name"                data-endpoint="POSTapi-register"
-               value="culpa"
+               value="quod"
                data-component="body">
     <br>
-<p>Example: <code>culpa</code></p>
+<p>Example: <code>quod</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>email</code></b>&nbsp;&nbsp;
@@ -1499,10 +1304,10 @@ fetch(url, {
  &nbsp;
                 <input type="text" style="display: none"
                name="email"                data-endpoint="POSTapi-register"
-               value="quod"
+               value="unde"
                data-component="body">
     <br>
-<p>Example: <code>quod</code></p>
+<p>Example: <code>unde</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>phone</code></b>&nbsp;&nbsp;
@@ -1510,10 +1315,10 @@ fetch(url, {
  &nbsp;
                 <input type="text" style="display: none"
                name="phone"                data-endpoint="POSTapi-register"
-               value="est"
+               value="quo"
                data-component="body">
     <br>
-<p>Example: <code>est</code></p>
+<p>Example: <code>quo</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>password</code></b>&nbsp;&nbsp;
@@ -1521,10 +1326,10 @@ fetch(url, {
  &nbsp;
                 <input type="text" style="display: none"
                name="password"                data-endpoint="POSTapi-register"
-               value="aut"
+               value="in"
                data-component="body">
     <br>
-<p>Example: <code>aut</code></p>
+<p>Example: <code>in</code></p>
         </div>
         </form>
 
@@ -1565,7 +1370,7 @@ fetch(url, {
 
 <span id="example-responses-GETapi-profile--id-">
             <blockquote>
-            <p>Example response (200):</p>
+            <p>Example response (401):</p>
         </blockquote>
                 <details class="annotation">
             <summary style="cursor: pointer;">
@@ -1573,27 +1378,11 @@ fetch(url, {
             </summary>
             <pre><code class="language-http">cache-control: no-cache, private
 content-type: application/json
-x-ratelimit-limit: 60
-x-ratelimit-remaining: 59
 access-control-allow-origin: *
  </code></pre></details>         <pre>
 
 <code class="language-json" style="max-height: 300px;">{
-    &quot;status&quot;: true,
-    &quot;users&quot;: {
-        &quot;id&quot;: 1,
-        &quot;name&quot;: &quot;kelvin&quot;,
-        &quot;email&quot;: &quot;kelvin@gmail.com&quot;,
-        &quot;phone&quot;: &quot;09054345678&quot;,
-        &quot;role&quot;: &quot;Agent&quot;,
-        &quot;address&quot;: null,
-        &quot;website&quot;: null,
-        &quot;image&quot;: &quot;please upload image&quot;,
-        &quot;gender&quot;: null,
-        &quot;email_verified_at&quot;: null,
-        &quot;created_at&quot;: &quot;2023-01-18T21:06:36.000000Z&quot;,
-        &quot;updated_at&quot;: &quot;2023-01-18T21:06:36.000000Z&quot;
-    }
+    &quot;message&quot;: &quot;Unauthenticated.&quot;
 }</code>
  </pre>
     </span>
@@ -1685,20 +1474,20 @@ access-control-allow-origin: *
 
 <div class="bash-example">
     <pre><code class="language-bash">curl --request POST \
-    "http://localhost/api/editprofile/quibusdam" \
+    "http://localhost/api/editprofile/unde" \
     --header "Content-Type: application/json" \
     --header "Accept: application/json" \
     --data "{
-    \"name\": \"et\",
-    \"email\": \"suscipit\",
-    \"phone\": \"sunt\"
+    \"name\": \"maxime\",
+    \"email\": \"facilis\",
+    \"phone\": \"placeat\"
 }"
 </code></pre></div>
 
 
 <div class="javascript-example">
     <pre><code class="language-javascript">const url = new URL(
-    "http://localhost/api/editprofile/quibusdam"
+    "http://localhost/api/editprofile/unde"
 );
 
 const headers = {
@@ -1707,9 +1496,9 @@ const headers = {
 };
 
 let body = {
-    "name": "et",
-    "email": "suscipit",
-    "phone": "sunt"
+    "name": "maxime",
+    "email": "facilis",
+    "phone": "placeat"
 };
 
 fetch(url, {
@@ -1790,10 +1579,10 @@ fetch(url, {
  &nbsp;
                 <input type="text" style="display: none"
                name="id"                data-endpoint="POSTapi-editprofile--id-"
-               value="quibusdam"
+               value="unde"
                data-component="url">
     <br>
-<p>The ID of the editprofile. Example: <code>quibusdam</code></p>
+<p>The ID of the editprofile. Example: <code>unde</code></p>
             </div>
                             <h4 class="fancy-heading-panel"><b>Body Parameters</b></h4>
         <div style=" padding-left: 28px;  clear: unset;">
@@ -1802,10 +1591,10 @@ fetch(url, {
  &nbsp;
                 <input type="text" style="display: none"
                name="name"                data-endpoint="POSTapi-editprofile--id-"
-               value="et"
+               value="maxime"
                data-component="body">
     <br>
-<p>Example: <code>et</code></p>
+<p>Example: <code>maxime</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>email</code></b>&nbsp;&nbsp;
@@ -1813,10 +1602,10 @@ fetch(url, {
  &nbsp;
                 <input type="text" style="display: none"
                name="email"                data-endpoint="POSTapi-editprofile--id-"
-               value="suscipit"
+               value="facilis"
                data-component="body">
     <br>
-<p>Example: <code>suscipit</code></p>
+<p>Example: <code>facilis</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>phone</code></b>&nbsp;&nbsp;
@@ -1824,10 +1613,10 @@ fetch(url, {
  &nbsp;
                 <input type="text" style="display: none"
                name="phone"                data-endpoint="POSTapi-editprofile--id-"
-               value="sunt"
+               value="placeat"
                data-component="body">
     <br>
-<p>Example: <code>sunt</code></p>
+<p>Example: <code>placeat</code></p>
         </div>
                 <div style=" padding-left: 28px;  clear: unset;">
             <b style="line-height: 2;"><code>address</code></b>&nbsp;&nbsp;
