@@ -85,7 +85,7 @@
                             <tr>
                                 <th>Gender</th>
                                 <td>
-                                    <select name="gender" id="gender">
+                                    <select name="gender" id="gender" class="form-control">
                                         <option value=""></option>
                                         <option value="male">Male</option>
                                         <option value="female">Female</option>
