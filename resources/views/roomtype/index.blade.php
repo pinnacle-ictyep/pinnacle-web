@@ -28,7 +28,7 @@
                     <thead>
                         <tr>
                             <th>#</th>
-                            <th>Hotel Name</th>
+                            {{-- <th>Hotel Name</th> --}}
                             <th>Roomtypes</th>
                             <th>Action</th>
                         </tr>
@@ -36,7 +36,7 @@
                     <tfoot>
                         <tr>
                             <th>#</th>
-                            <th>Hotel Name</th>
+                            {{-- <th>Hotel Name</th> --}}
                             <th>Roomtypes</th>
                             <th>Action</th>
                         </tr>
@@ -45,7 +45,7 @@
                         @foreach ($roomtypes as $roomtype)
                             <tr>
                             <td>{{$roomtype->id}}</td>
-                            <td>{{$roomtype->hotel->name}}</td>
+                            {{-- <td>{{$roomtype->hotel->name}}</td> --}}
                             <td>{{$roomtype->title}}</td>
                             <td>
                                 <a href="{{route('roomtype.show', $roomtype->id)}}" class="btn btn-info btn-sm"><i class="fa fa-eye"></i></a>
