@@ -67,7 +67,6 @@ class GalleryController extends Controller
     {
         $request->validate([
             'img_scr'=> 'required',
-            'hotel_id'=> 'exists:hotels,id'
         ]);
 
         $hotel= Hotel::find(auth()->user()->id);
