@@ -64,9 +64,6 @@ header .navigation li a:hover{
 
 }
 
-.flight:hover{
-    width: 350px;
-}
 
 
 @media (max-width: 991px){

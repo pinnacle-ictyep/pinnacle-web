@@ -21,6 +21,10 @@ class User extends Authenticatable
     protected $appends = ['images'];
 
 
+    public function bookings(){
+        $this->belongsTo(Booking::class);
+    }
+
     public function getImagesAttribute(){
         return config('app.url').'/storage/'. $this->image;
     }

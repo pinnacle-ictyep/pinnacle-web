@@ -8,7 +8,7 @@
   <title>StayInn.ng: Book the best Hotels in Delta State</title>
   <link rel="stylesheet" href="{{asset('style.css')}}">
   <link rel="stylesheet" href="{{asset('css/bootstrap.min.css')}}"/>
-  {{-- <script src="https://kit.fontawesome.com/ad1524cc6d.js" crossorigin="anonymous"> </script> --}}
+  <script src="https://kit.fontawesome.com/ad1524cc6d.js" crossorigin="anonymous"> </script>
   <!-- CSS only -->
   {{-- <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" --}}
     {{-- integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous"> --}}
@@ -19,21 +19,21 @@
 
 
    <!-- Bootstrap core CSS -->
-   {{-- <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet"> --}}
+   <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
    {{-- <link rel="stylesheet" href="//maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"> --}}
 
 
 
-   {{-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css"> --}}
+   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/flatpickr/dist/flatpickr.min.css">
 
    {{-- <link href="https://static.hotels.ng/v7/stylesheets/css/appv80.min.css?v=17.6" rel="stylesheet" /> --}}
 
 
    
-       {{-- <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script> --}}
+       <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
 
 
-       {{-- <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script> --}}
+       <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js"></script>
 
 
 </head>
@@ -78,8 +78,8 @@
   
           <div class="container">
             <div class="carousel-caption">
-              <h1>Welcome to Stay<span>Inn</span></h1>
-              <p>#1 hotel booking platform in Delta State</p>
+              <h1 class="text-dark">Welcome to Stay<span>Inn</span></h1>
+              <p class="text-dark">#1 hotel booking platform in Delta State</p>
 
             </div>
           </div>
@@ -91,20 +91,20 @@
             <div class="carousel-caption" style="text-align: center;" >
               <h1>Find and book your next stay in Asaba.</h1>
               <p>Search through for affordable hotels in Asaba</p>
-              <p><a class="btn btn-lg btn-primary" href="#">Book Now</a></p>
+              <p><a class="btn btn-lg btn-primary" href="#download">Book Now</a></p>
             </div>
           </div>
-        </div>
+        {{-- </div>
         <div class="carousel-item">
           <!-- <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg> -->
           <img class="bd-placeholder-img" src="images/exquisitehotel.webp" alt="Company Logo" width="100%" height="456px">
           <div class="container">
             <div class="carousel-caption">
               <p>A project by ICT-YEP 2022 Beneficiaries</p>
-              <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
+              <p><a class="btn btn-lg btn-primary" href="#"></a></p>
             </div>
           </div>
-        </div>
+        </div> --}}
       </div>
       <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
         <span class="carousel-control-prev-icon" aria-hidden="true"></span>
@@ -217,7 +217,7 @@
 
       <div class="row">
         <div class="explore" id="hotels">
-          <h3>Today  </h3>
+          <h3>Today Hotels </h3>
           <p>A selection of the best hotels available today</p>
         </div>
       </div>
@@ -411,7 +411,7 @@
           </div>
           <div class="row">
          
-            <img src="images/download.png" alt="city" width="100%">
+            <a href="http://play.google.com"><img src="images/download.png" alt="city" width="100%"></a>
         
         </div>
     </div>

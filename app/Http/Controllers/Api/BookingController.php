@@ -4,6 +4,7 @@ namespace App\Http\Controllers\Api;
 
 use App\Http\Controllers\Controller;
 use App\Models\Booking;
+use App\Models\User;
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Validator;
 
@@ -23,6 +24,7 @@ class BookingController extends Controller
             'hotel_id' => 'exists:hotels,id',
             'roomtype_id' => 'exists:roomtypes,id',
             'total' => 'required',
+            'user_id' => 'nullable',
             'check_in' => 'required',
             'check_out' => 'required',
             'name' => 'required',
@@ -47,5 +49,15 @@ class BookingController extends Controller
         'message' => 'Booked'
     ]);
 
+    }
+
+    public function show($id){
+        $user = User::find($id);
+        return response()->json([
+            'status'=> true,
+            'booking'=>$user->booking
+        ]);
+
+        
     }
 }

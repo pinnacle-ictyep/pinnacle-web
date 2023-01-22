@@ -18,4 +18,7 @@ class Booking extends Model
     public function roomtype(){
         $this->belongsTo(Roomtype::class, 'roomtype-id');
     }
+    public function user(){
+        $this->belongsTo(User::class);
+    }
 }
