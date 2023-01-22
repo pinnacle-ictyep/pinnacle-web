@@ -64,7 +64,7 @@ Route::post('agent/createRT', [AgentRTController::class, 'storeroomtypes'])->nam
 Route::get('agent/showRT', [AgentRTController::class, 'showroomtypes'])->name('showRT')->middleware(['auth', 'agent']);
 Route::get('agent/editRT/{id}', [AgentRTController::class, 'editroomtypes'])->name('editRT')->middleware(['auth', 'agent']);
 Route::post('agent/editRT/{id}', [AgentRTController::class, 'updateroomtypes'])->name('updateRT')->middleware(['auth', 'agent']);
-Route::get('agent/deleteRT/{id}/delete', [AgentRTController::class, 'deleteroomtypes'])->name('deleteRT')->middleware(['auth', 'agent']);
+Route::get('agent/deleteRT/{id}/delete', [AgentRTController::class, 'deleteroomtypes'])->name('deleteRT')->middleware(['auth']);
 Route::get('agent/deletRT/{id}/delete', [AgentRTController::class, 'deleteroomtypes'])->name('deleteRT')->middleware(['isAdmin']);
 
 

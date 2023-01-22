@@ -23,7 +23,7 @@
                     <thead>
                         <tr>
                             <th>#</th>
-                            <th>Full Name</th>
+                            {{-- <th>Full Name</th> --}}
                             <th>gallery</th>
                             <th>Action</th>
                         </tr>
@@ -31,7 +31,7 @@
                     <tfoot>
                         <tr>
                             <th>#</th>
-                            <th>Full Name</th>
+                            {{-- <th>Full Name</th> --}}
                             <th>gallery</th>
                             <th>Action</th>
                         </tr>
@@ -45,8 +45,8 @@
                                 <img src="{{asset('storage/'.$gallery->img_scr)}}" class="img-fluid" width="100px"> 
                              </td>
                             <td>
-                                <a href="{{route('gallery.show', $gallery->id)}}" class="btn btn-info btn-sm"><i class="fa fa-eye"></i></a>
-                                <a href="{{route('gallery.edit', $gallery->id)}}" class="btn btn-primary btn-sm"><i class="fa fa-edit"></i></a>
+                                {{-- <a href="{{route('gallery.show', $gallery->id)}}" class="btn btn-info btn-sm"><i class="fa fa-eye"></i></a>
+                                <a href="{{route('gallery.edit', $gallery->id)}}" class="btn btn-primary btn-sm"><i class="fa fa-edit"></i></a> --}}
                                 <a href="{{route('gallery.destroy', $gallery->id)}}" class="btn btn-danger btn-sm" onclick="confirm ('are you sure you want to delete this')"><i class="fa fa-trash"></i></a>
                             </td>
                         </tr>
