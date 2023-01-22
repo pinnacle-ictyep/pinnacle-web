@@ -30,11 +30,13 @@ endpoints:
     fileParameters: []
     responses:
       -
-        status: 401
-        content: '{"message":"Unauthenticated."}'
+        status: 200
+        content: '{"status":true,"roomtypes":[{"id":1,"title":"mini","image":"image\/NjGwBrIxSg2utOGE9U5A6WlJKCXmvfl04OGuBVN6.jpg","price":"450","hotel_id":"3","created_at":"2023-01-18T21:18:02.000000Z","updated_at":"2023-01-18T21:18:02.000000Z","images":"http:\/\/localhost\/storage\/image\/NjGwBrIxSg2utOGE9U5A6WlJKCXmvfl04OGuBVN6.jpg"},{"id":2,"title":"mini","image":"image\/Pf45y6VEpQV825asdX2rYLpZ9tY7WgfJC8yZNXmP.jpg","price":"20000-40000","hotel_id":"5","created_at":"2023-01-19T23:09:03.000000Z","updated_at":"2023-01-19T23:09:03.000000Z","images":"http:\/\/localhost\/storage\/image\/Pf45y6VEpQV825asdX2rYLpZ9tY7WgfJC8yZNXmP.jpg"}]}'
         headers:
           cache-control: 'no-cache, private'
           content-type: application/json
+          x-ratelimit-limit: '60'
+          x-ratelimit-remaining: '56'
           access-control-allow-origin: '*'
         description: null
         custom: []

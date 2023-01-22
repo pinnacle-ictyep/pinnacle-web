@@ -30,21 +30,21 @@ endpoints:
         name: hotel_name
         description: ''
         required: true
-        example: incidunt
+        example: impedit
         type: string
         custom: []
       hotel_location:
         name: hotel_location
         description: ''
         required: true
-        example: sint
+        example: recusandae
         type: string
         custom: []
       roomtype:
         name: roomtype
         description: ''
         required: true
-        example: libero
+        example: in
         type: string
         custom: []
       hotel_id:
@@ -65,42 +65,42 @@ endpoints:
         name: total
         description: ''
         required: true
-        example: ipsa
+        example: enim
         type: string
         custom: []
       check_in:
         name: check_in
         description: ''
         required: true
-        example: sit
+        example: nisi
         type: string
         custom: []
       check_out:
         name: check_out
         description: ''
         required: true
-        example: quo
+        example: voluptas
         type: string
         custom: []
       name:
         name: name
         description: ''
         required: true
-        example: nihil
+        example: non
         type: string
         custom: []
       phone:
         name: phone
         description: ''
         required: true
-        example: rerum
+        example: et
         type: string
         custom: []
       email:
         name: email
         description: ''
         required: true
-        example: fugit
+        example: repellendus
         type: string
         custom: []
       comment:
@@ -111,15 +111,15 @@ endpoints:
         type: string
         custom: []
     cleanBodyParameters:
-      hotel_name: incidunt
-      hotel_location: sint
-      roomtype: libero
-      total: ipsa
-      check_in: sit
-      check_out: quo
-      name: nihil
-      phone: rerum
-      email: fugit
+      hotel_name: impedit
+      hotel_location: recusandae
+      roomtype: in
+      total: enim
+      check_in: nisi
+      check_out: voluptas
+      name: non
+      phone: et
+      email: repellendus
     fileParameters: []
     responses: []
     responseFields: []

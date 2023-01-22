@@ -18,6 +18,12 @@ class User extends Authenticatable
      * @var array<int, string>
      */
     protected $guarded = ['id'];
+    protected $appends = ['images'];
+
+
+    public function getImagesAttribute(){
+        return config('app.url').'/storage/'. $this->image;
+    }
 
     /**
      * The attributes that should be hidden for serialization.

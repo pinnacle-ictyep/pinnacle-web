@@ -13,9 +13,14 @@ class Hotel extends Model
     use HasFactory;
 
     protected $guarded = ['id'];
+    protected $appends = ['images'];
 
     public function gallery(){
         return $this->hasMany(Gallery::class);
+    }
+
+    public function getImagesAttribute(){
+        return config('app.url').'/storage/'. $this->image;
     }
 
     public function roomtype(){

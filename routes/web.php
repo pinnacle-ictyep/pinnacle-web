@@ -32,7 +32,7 @@ Route::get('/', [HomeController::class, 'index'])->name('home');
 
 
 
-// Route::middleware(['auth', 'isAdmin'])->group(function(){
+Route::middleware(['auth', 'isAdmin'])->group(function(){
 // admin hotel route
 Route::resource('admin/hotel', HotelController::class);
 Route::get('admin/hotel/{id}/delete', [HotelController::class, 'destroy'])->name('hotel.destroy');
@@ -44,7 +44,7 @@ Route::get('admin/roomtype/{id}/delete', [RoomtypeController::class, 'destroy'])
 // admin gallery route
 Route::resource('admin/gallery', GalleryController::class);
 Route::get('admin/gallery/{id}/delete', [GalleryController::class, 'destroy'])->name('gallery.destroy');
-// });
+});
 
 
 Route::get('/dashboard',[DashboardController::class, 'index'])->name('dashboard')->middleware(['auth']);
