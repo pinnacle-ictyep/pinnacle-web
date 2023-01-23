@@ -22,7 +22,7 @@ class User extends Authenticatable
 
 
     public function bookings(){
-        $this->belongsTo(Booking::class);
+        $this->hasMany(Booking::class);
     }
 
     public function getImagesAttribute(){
