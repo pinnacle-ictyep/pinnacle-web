@@ -49,27 +49,27 @@ Route::get('admin/gallery/{id}/delete', [GalleryController::class, 'destroy'])->
 
 Route::get('/dashboard',[DashboardController::class, 'index'])->name('dashboard')->middleware(['auth']);
 
-Route::get('agent/hotelcreate', [AgentController::class, 'createhotel'])->name('hotel.createe')->middleware(['auth', 'agent']);
-Route::post('agent/hotelcreate', [AgentController::class, 'storehotel'])->name('hotel.storee')->middleware(['auth', 'agent']);
-Route::get('agent/user/{id}', [AgentController::class, 'show'])->name('user.showw')->middleware(['auth', 'agent']);
-Route::get('agent/hotel/{id}', [AgentController::class, 'showhotel'])->name('hotel.showw')->middleware(['auth', 'agent']);
-Route::get('agent/edit/{id}', [AgentController::class, 'edit'])->name('user.editt')->middleware(['auth', 'agent']);
-Route::get('agent/hoteledit/{id}', [AgentController::class, 'edithotel'])->name('hotel.editt')->middleware(['auth', 'agent']);
-Route::post('agent/edit/{id}', [AgentController::class, 'update'])->name('user.update')->middleware(['auth', 'agent']);
-Route::post('agent/hoteledit/{id}', [AgentController::class, 'updatehotel'])->name('hotel.update')->middleware(['auth', 'agent']);
+Route::get('agent/hotelcreate', [AgentController::class, 'createhotel'])->name('hotel.createe')->middleware(['auth']);
+Route::post('agent/hotelcreate', [AgentController::class, 'storehotel'])->name('hotel.storee')->middleware(['auth']);
+Route::get('agent/user/{id}', [AgentController::class, 'show'])->name('user.showw')->middleware(['auth']);
+Route::get('agent/hotel/{id}', [AgentController::class, 'showhotel'])->name('hotel.showw')->middleware(['auth']);
+Route::get('agent/edit/{id}', [AgentController::class, 'edit'])->name('user.editt')->middleware(['auth']);
+Route::get('agent/hoteledit/{id}', [AgentController::class, 'edithotel'])->name('hotel.editt')->middleware(['auth']);
+Route::post('agent/edit/{id}', [AgentController::class, 'update'])->name('user.update')->middleware(['auth']);
+Route::post('agent/hoteledit/{id}', [AgentController::class, 'updatehotel'])->name('hotel.update')->middleware(['auth']);
 
 
-Route::get('agent/createRT', [AgentRTController::class, 'createroomtypes'])->name('createRT')->middleware(['auth', 'agent']);
-Route::post('agent/createRT', [AgentRTController::class, 'storeroomtypes'])->name('storeRT')->middleware(['auth', 'agent']);
-Route::get('agent/showRT', [AgentRTController::class, 'showroomtypes'])->name('showRT')->middleware(['auth', 'agent']);
-Route::get('agent/editRT/{id}', [AgentRTController::class, 'editroomtypes'])->name('editRT')->middleware(['auth', 'agent']);
-Route::post('agent/editRT/{id}', [AgentRTController::class, 'updateroomtypes'])->name('updateRT')->middleware(['auth', 'agent']);
+Route::get('agent/createRT', [AgentRTController::class, 'createroomtypes'])->name('createRT')->middleware(['auth']);
+Route::post('agent/createRT', [AgentRTController::class, 'storeroomtypes'])->name('storeRT')->middleware(['auth']);
+Route::get('agent/showRT', [AgentRTController::class, 'showroomtypes'])->name('showRT')->middleware(['auth']);
+Route::get('agent/editRT/{id}', [AgentRTController::class, 'editroomtypes'])->name('editRT')->middleware(['auth']);
+Route::post('agent/editRT/{id}', [AgentRTController::class, 'updateroomtypes'])->name('updateRT')->middleware(['auth']);
 Route::get('agent/deleteRT/{id}/delete', [AgentRTController::class, 'deleteroomtypes'])->name('deleteRT')->middleware(['auth']);
-Route::get('agent/deletRT/{id}/delete', [AgentRTController::class, 'deleteroomtypes'])->name('deleteRT')->middleware(['isAdmin']);
+Route::get('agent/deletRT/{id}/delete', [AgentRTController::class, 'deleteroomtypes'])->name('deleteRT')->middleware(['auth']);
 
 
-Route::get('agent/createGL', [GalleryController::class, 'creategallery'])->name('createGL')->middleware(['auth', 'agent']);
-Route::post('agent/createGL', [GalleryController::class, 'storegallery'])->name('storeGL')->middleware(['auth', 'agent']);
-Route::get('agent/showGL', [GalleryController::class, 'showgallery'])->name('showGL')->middleware(['auth', 'agent']);
-Route::get('agent/deletGL/{id}/delete', [GalleryController::class, 'deletegallery'])->name('deleteGL')->middleware(['auth', 'agent']);
+Route::get('agent/createGL', [GalleryController::class, 'creategallery'])->name('createGL')->middleware(['auth']);
+Route::post('agent/createGL', [GalleryController::class, 'storegallery'])->name('storeGL')->middleware(['auth']);
+Route::get('agent/showGL', [GalleryController::class, 'showgallery'])->name('showGL')->middleware(['auth']);
+Route::get('agent/deletGL/{id}/delete', [GalleryController::class, 'deletegallery'])->name('deleteGL')->middleware(['auth']);
 
