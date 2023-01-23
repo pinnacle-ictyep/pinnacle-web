@@ -33,7 +33,7 @@
             <!-- Sidebar - Brand -->
             <a class="sidebar-brand d-flex align-items-center justify-content-center" href="index.html">
                 <div class="sidebar-brand-icon">
-                    <a href="{{route('home')}}">StayInn</a>
+                    <a href="{{route('home')}}"><div>StayInn</div> </a>
                 </div>
             </a>
 
