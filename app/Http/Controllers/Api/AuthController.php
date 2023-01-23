@@ -65,7 +65,7 @@ class AuthController extends Controller
 
         if ($validatecreate->fails()) {
             return response()->json([
-                'status' => 'false',
+                'status' => false,
                 'message' => 'validation error',
                 'errors' => $validatecreate->errors()
             ], 422);
