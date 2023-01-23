@@ -23,7 +23,7 @@
                     <thead>
                         <tr>
                             <th>#</th>
-                            {{-- <th>Full Name</th> --}}
+                            <th>Hotel Name</th>
                             <th>gallery</th>
                             <th>Action</th>
                         </tr>
@@ -31,7 +31,7 @@
                     <tfoot>
                         <tr>
                             <th>#</th>
-                            {{-- <th>Full Name</th> --}}
+                            <th>Hotel Name</th>
                             <th>gallery</th>
                             <th>Action</th>
                         </tr>
@@ -40,7 +40,7 @@
                         @foreach ($gallerys as $gallery)
                             <tr>
                             <td>{{$gallery->id}}</td>
-                            {{-- <td>{{$gallery->hotel_id}}</td> --}}
+                            <td>{{$gallery->hotel->name}}</td>
                             <td>
                                 <img src="{{asset('storage/'.$gallery->img_scr)}}" class="img-fluid" width="100px"> 
                              </td>
