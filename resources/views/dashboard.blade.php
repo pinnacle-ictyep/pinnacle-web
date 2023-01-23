@@ -42,7 +42,7 @@
                                 <div class="col mr-2">
                                     <div class="text-xs font-weight-bold text-primary text-uppercase mb-1">
                                         Earnings (Monthly)</div>
-                                    <div class="h5 mb-0 font-weight-bold text-gray-800">$120</div>
+                                    <div class="h5 mb-0 font-weight-bold text-gray-800">$0</div>
                                 </div>
                                 <div class="col-auto">
                                     <i class="fas fa-calendar fa-2x text-gray-300"></i>
@@ -60,7 +60,7 @@
                                 <div class="col mr-2">
                                     <div class="text-xs font-weight-bold text-success text-uppercase mb-1">
                                         Earnings (Today)</div>
-                                    <div class="h5 mb-0 font-weight-bold text-gray-800">$110</div>
+                                    <div class="h5 mb-0 font-weight-bold text-gray-800">$0</div>
                                 </div>
                                 <div class="col-auto">
                                     <i class="fas fa-dollar-sign fa-2x text-gray-300"></i>
@@ -78,7 +78,7 @@
                                 <div class="col mr-2">
                                     <div class="text-xs font-weight-bold text-warning text-uppercase mb-1">
                                         Total customers</div>
-                                    <div class="h5 mb-0 font-weight-bold text-gray-800">3</div>
+                                    <div class="h5 mb-0 font-weight-bold text-gray-800">0</div>
                                 </div>
                                 <div class="col-auto">
                                     <i class="fas fa-comments fa-2x text-gray-300"></i>
@@ -102,15 +102,15 @@
                         </div>
                         <div class="card-body">
                             <h4 class="small font-weight-bold">Bookings <span
-                                    class="float-right">10%</span></h4>
+                                    class="float-right">0%</span></h4>
                             <div class="progress mb-4">
-                                <div class="progress-bar bg-warning" role="progressbar" style="width: 10%"
+                                <div class="progress-bar bg-warning" role="progressbar" style="width: 0%"
                                     aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                             <h4 class="small font-weight-bold">Customer Database <span
-                                    class="float-right">26%</span></h4>
+                                    class="float-right">0%</span></h4>
                             <div class="progress mb-4">
-                                <div class="progress-bar" role="progressbar" style="width: 30%"
+                                <div class="progress-bar" role="progressbar" style="width: 0%"
                                     aria-valuenow="0" aria-valuemin="0" aria-valuemax="100"></div>
                             </div>
                             <h4 class="small font-weight-bold">Account Setup <span
