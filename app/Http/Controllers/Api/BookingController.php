@@ -55,7 +55,7 @@ class BookingController extends Controller
         $user = User::find($id);
         return response()->json([
             'status'=> true,
-            'booking'=>$user->booking
+            'booking'=>$user->booking->get()
         ]);
 
         
