@@ -148,23 +148,34 @@
             </li>
         @endif
 
-            @if (Auth::user()->role == 'Agent')
+            {{-- @if (Auth::user()->role == 'Agent') --}}
             <li class="nav-item">
                 <a class="nav-link collapsed" href="#" data-toggle="collapse" data-target="#book"
                     aria-expanded="true" aria-controls="collapseTwo">
                     <i class="fas fa-fw fa-table"></i>
                     <span> Bookings</span>
                 </a>
+                @php
+                    use App\Models\Booking;
+                    $bookings = Booking::all();
+                    foreach ($bookings as $booking) 
+                    
+ 
+                @endphp
                 <div id="book" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
                     <div class="bg-white py-2 collapse-inner rounded">
-                            {{-- <a class="collapse-item"
-                                href="{{ route('hotel.showw', Booking::findOrFail(Auth::user()->id)) }}">View</a>
+                        @if (Auth::user()->role == 'Admin')
                             <a class="collapse-item"
-                                href="{{ route('hotel.editt', Booking::findOrFail(Auth::user()->id)) }}">edit</a> --}}
+                                href="{{ route('book')}}">View</a>
+                                @endif
+                                @if (Auth::user()->role == 'Agent')
+                            <a class="collapse-item"
+                                href="{{ route('book.show', $booking->id) }}">show</a>
+                                @endif
                     </div>
                 </div>
             </li>
-        @endif
+        {{-- @endif --}}
 
 
             <hr>
