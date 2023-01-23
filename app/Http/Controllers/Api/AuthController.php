@@ -68,7 +68,7 @@ class AuthController extends Controller
                 'status' => 'false',
                 'message' => 'validation error',
                 'errors' => $validatecreate->errors()
-            ], 404);
+            ], 422);
         }
 
         if ($request->hasFile('image')) {
