@@ -65,6 +65,7 @@ Route::post('agent/createRT', [AgentRTController::class, 'storeroomtypes'])->nam
 Route::get('agent/showRT', [AgentRTController::class, 'showroomtypes'])->name('showRT')->middleware(['auth']);
 Route::get('agent/book', [BookingController::class, 'index'])->name('book')->middleware(['auth']);
 Route::get('agent/bookshow/{id}', [BookingController::class, 'show'])->name('book.show')->middleware(['auth']);
+Route::get('agent/bookshow/{id}/delete', [BookingController::class, 'destroy'])->name('book.destroy')->middleware(['auth']);
 Route::get('agent/editRT/{id}', [AgentRTController::class, 'editroomtypes'])->name('editRT')->middleware(['auth']);
 Route::post('agent/editRT/{id}', [AgentRTController::class, 'updateroomtypes'])->name('updateRT')->middleware(['auth']);
 Route::get('agent/deleteRT/{id}/delete', [AgentRTController::class, 'deleteroomtypes'])->name('deleteRT')->middleware(['auth']);

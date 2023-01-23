@@ -16,4 +16,11 @@ class BookingController extends Controller
         $booking = Booking::findOrFail($id);
         return view('booking.show', ['booking'=> $booking]);
     }
+
+    public function destroy($id){
+        $booking = Booking::findOrFail($id);
+        $booking->delete();
+
+        return redirect()->back()->with('message', 'Deleted');
+    }
 }

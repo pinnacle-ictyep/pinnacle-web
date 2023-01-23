@@ -44,8 +44,8 @@
                             <td>{{$booking->email}}</td>
                             <td>
                                 <a href="{{route('book.show', $booking->id)}}" class="btn btn-info btn-sm"><i class="fa fa-eye"></i></a>
-                                {{-- <a href="{{route('booking.edit', $booking->id)}}" class="btn btn-primary btn-sm"><i class="fa fa-edit"></i></a>
-                                <a href="{{route('booking.destroy', $booking->id)}}" class="btn btn-danger btn-sm" onclick="confirm ('are you sure you want to delete this')"><i class="fa fa-trash"></i></a> --}}
+                                {{-- <a href="{{route('booking.edit', $booking->id)}}" class="btn btn-primary btn-sm"><i class="fa fa-edit"></i></a> --}}
+                                <a href="{{route('book.destroy', $booking->id)}}" class="btn btn-danger btn-sm" onclick="confirm ('are you sure you want to delete this')"><i class="fa fa-trash"></i></a>
                             </td>
                         </tr>
                         @endforeach
